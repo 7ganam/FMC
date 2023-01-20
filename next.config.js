@@ -22,6 +22,7 @@ module.exports = withImages({
       config.plugins
         .push
         //      new ESLintPlugin({
+
         //        exclude: ['node_modules']
         //      })
         ();
