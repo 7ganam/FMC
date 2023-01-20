@@ -1,8 +1,3 @@
-const menu = [
-  'about',
-  'facility',
-  'ask-doctors',
-  'clinics'
-];
+const menu = ["about", "EVGP", "GEVC", "sponsors", "location"];
 
 export default menu;

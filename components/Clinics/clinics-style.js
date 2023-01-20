@@ -1,39 +1,39 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    position: 'relative',
+    position: "relative",
   },
   parallaxBottom: {
-    '& > div': {
+    "& > div": {
       top: -100,
-      overflow: 'visible'
-    }
+      overflow: "visible",
+    },
   },
   block: {
-    position: 'relative',
-    '& > *': {
-      [theme.breakpoints.only('sm')]: {
+    position: "relative",
+    "& > *": {
+      [theme.breakpoints.only("sm")]: {
         padding: theme.spacing(4, 2),
-        display: 'inline-block',
-        width: '49%'
-      }
-    }
+        display: "inline-block",
+        width: "49%",
+      },
+    },
   },
   map: {
-    background: '#dedede',
-    overflow: 'hidden',
-    position: 'relative',
-    width: '100%',
-    height: 700,
-    [theme.breakpoints.up('md')]: {
+    background: "#dedede",
+    overflow: "hidden",
+    position: "relative",
+    width: "100%",
+    height: 500,
+    [theme.breakpoints.up("md")]: {
       marginTop: theme.spacing(10),
     },
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       marginTop: theme.spacing(-6),
-      height: 320
-    }
-  }
+      height: 320,
+    },
+  },
 }));
 
 export default useStyles;

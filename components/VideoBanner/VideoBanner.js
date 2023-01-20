@@ -1,36 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import clsx from 'clsx';
-import { useTheme } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import PlayIcon from '@material-ui/icons/PlayArrow';
-import PauseIcon from '@material-ui/icons/Pause';
-import SearchIcon from '@material-ui/icons/Search';
-import YouTube from 'react-youtube';
-import Paper from '@material-ui/core/Paper';
-import TextField from '@material-ui/core/TextField';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import Hidden from '@material-ui/core/Hidden';
-import { useTranslation } from 'next-i18next';
-import { useText } from '~/theme/common';
-import imgApi from '~/public/images/imgAPI';
-import yt from '~/youtube';
-import useStyles from './banner-style';
-import DotsParallax from '../Parallax/Dots';
+import React, { useState, useEffect } from "react";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import clsx from "clsx";
+import { useTheme } from "@material-ui/core/styles";
+import Container from "@material-ui/core/Container";
+import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import PlayIcon from "@material-ui/icons/PlayArrow";
+import PauseIcon from "@material-ui/icons/Pause";
+import SearchIcon from "@material-ui/icons/Search";
+import YouTube from "react-youtube";
+import Paper from "@material-ui/core/Paper";
+import TextField from "@material-ui/core/TextField";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
+import Hidden from "@material-ui/core/Hidden";
+import { useTranslation } from "next-i18next";
+import { useText } from "~/theme/common";
+import imgApi from "~/public/images/imgAPI";
+import yt from "~/youtube";
+import useStyles from "./banner-style";
+import DotsParallax from "../Parallax/Dots";
+
+import logo1 from "~/public/images/attachment 1.png";
+import logo2 from "~/public/images/attachment 2.png";
 
 function VideoBanner() {
   // Theme breakpoints
   const theme = useTheme();
   const text = useText();
-  const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
-  const isTablet = useMediaQuery(theme.breakpoints.up('sm'));
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
+  const isTablet = useMediaQuery(theme.breakpoints.up("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   // Translation function
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
 
   // Youtube player
   const [play, setPlayed] = useState(false);
@@ -39,25 +42,25 @@ function VideoBanner() {
 
   // Search box
   const [values, setValue] = useState({
-    query: '',
+    query: "",
   });
   const classes = useStyles();
 
   useEffect(() => {
     if (isDesktop) {
       /* Attention
-      ** HandleScroll function to optimize site with video background may give an error log
-      ** Uncaught TypeError: Cannot read property 'src' of null
-      ** It's because HMR in development mode, and react-youtube need to refresh.
-      ** The error log will not happen in production mode or just reload browser (development mode)
-      ** You can uncomment _onPlay() function, if you don't want see error browser log.
-      ** But then every changes you make, the browser will auto reload.
-      */
+       ** HandleScroll function to optimize site with video background may give an error log
+       ** Uncaught TypeError: Cannot read property 'src' of null
+       ** It's because HMR in development mode, and react-youtube need to refresh.
+       ** The error log will not happen in production mode or just reload browser (development mode)
+       ** You can uncomment _onPlay() function, if you don't want see error browser log.
+       ** But then every changes you make, the browser will auto reload.
+       */
       // _onPlay();
     }
   }, []);
 
-  const _onEnd = event => {
+  const _onEnd = (event) => {
     event.target.playVideo();
   };
 
@@ -69,7 +72,7 @@ function VideoBanner() {
     }
   };
 
-  const _onReady = event => {
+  const _onReady = (event) => {
     player.push(event.target);
     setPlayer(player);
   };
@@ -84,16 +87,17 @@ function VideoBanner() {
   };
 
   const opts = {
-    height: '720',
-    width: '1080',
-    playerVars: { // https://developers.google.com/youtube/player_parameters
+    height: "720",
+    width: "1080",
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
       controls: 0,
       rel: 0,
       showinfo: 0,
       mute: 1,
-      origin: 'http://localhost:3009'
-    }
+      origin: "http://localhost:3009",
+    },
   };
 
   const handleChange = (event, type) => {
@@ -113,25 +117,23 @@ function VideoBanner() {
             <div className={classes.bannerText}>
               <div className={classes.title}>
                 <Typography variant="h3" className={clsx(classes.textHelper, text.title)}>
-                  {t('medical-landing.banner_title')}
+                  {t("medical-landing.banner_title")}
                 </Typography>
               </div>
               <Typography className={clsx(classes.subtitle, text.subtitle2)} variant="h5">
-                {t('medical-landing.banner_subtitle')}
+                {t("medical-landing.banner_subtitle")}
               </Typography>
-              <Paper className={classes.searchBanner}>
-                <TextField
-                  className={classes.search}
-                  label={isMobile ? 'Search...' : 'Search doctor, medicines or clinic...'}
-                  onChange={(e) => handleChange(e, 'query')}
-                />
-                <div className={classes.action}>
-                  <Button className={classes.button} variant="contained" color="secondary" size="large">
-                    {isMobile && <SearchIcon className={classes.icon} />}
-                    {isDesktop && t('medical-landing.banner_search')}
-                  </Button>
-                </div>
-              </Paper>
+              <div
+                className="flex gap-5
+"
+              >
+                <Paper style={{ width: "200px", padding: "10px" }} className="flex items-center">
+                  <img src={logo1} alt="logo" style={{ width: "100%" }} />
+                </Paper>
+                <Paper style={{ width: "200px", padding: "10px" }}>
+                  <img src={logo2} alt="logo" style={{ width: "100%" }} />
+                </Paper>
+              </div>
             </div>
           </Grid>
           {isTablet && (
@@ -145,10 +147,7 @@ function VideoBanner() {
                   <div className={classes.innerFigure}>
                     <Hidden mdDown>
                       {play && (
-                        <IconButton
-                          className={classes.btnPlay}
-                          onClick={_onTogglePause}
-                        >
+                        <IconButton className={classes.btnPlay} onClick={_onTogglePause}>
                           {playCtrl ? <PauseIcon /> : <PlayIcon />}
                         </IconButton>
                       )}
@@ -158,7 +157,7 @@ function VideoBanner() {
                       <div className={classes.video}>
                         <Hidden mdDown>
                           <YouTube
-                            videoId="sbef4EWb4js"
+                            videoId="zxBCJNPXUJI"
                             opts={opts}
                             onReady={_onReady}
                             onEnd={_onEnd}

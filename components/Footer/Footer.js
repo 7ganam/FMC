@@ -1,23 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import { useTheme } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
-import IconButton from '@material-ui/core/IconButton';
-import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/medical-logo.svg';
-import brand from '~/public/text/brand';
-import { useTextAlign } from '~/theme/common';
-import useStyles from './footer-style';
-import SelectLang from '../LangSwitch/Select';
+import React from "react";
+import PropTypes from "prop-types";
+import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
+import { useTheme } from "@material-ui/core/styles";
+import ExpansionPanel from "@material-ui/core/ExpansionPanel";
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
+import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import Typography from "@material-ui/core/Typography";
+import Link from "@material-ui/core/Link";
+import IconButton from "@material-ui/core/IconButton";
+import { useTranslation } from "next-i18next";
+import logo from "~/public/images/medical-logo.svg";
+import brand from "~/public/text/brand";
+import { useTextAlign } from "~/theme/common";
+import useStyles from "./footer-style";
+import SelectLang from "../LangSwitch/Select";
 
 function Copyright() {
   return (
@@ -29,32 +29,32 @@ function Copyright() {
 }
 
 const footers = [
-  {
-    title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
-    link: ['#team', '#history', '#contact-us', '#locations'],
-  },
-  {
-    title: 'Resources',
-    description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
-    link: ['#resource', '#resource-name', '#another-resource', '#final-resource'],
-  },
-  {
-    title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
-    link: ['#privacy-policy', '#terms-of-use'],
-  },
+  // {
+  //   title: 'Company',
+  //   description: ['Team', 'History', 'Contact us', 'Locations'],
+  //   link: ['#team', '#history', '#contact-us', '#locations'],
+  // },
+  // {
+  //   title: 'Resources',
+  //   description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
+  //   link: ['#resource', '#resource-name', '#another-resource', '#final-resource'],
+  // },
+  // {
+  //   title: 'Legal',
+  //   description: ['Privacy policy', 'Terms of use'],
+  //   link: ['#privacy-policy', '#terms-of-use'],
+  // },
 ];
 
 function Footer(props) {
   // Theme breakpoints
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
-  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   // Translation Function
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
   const { toggleDir } = props;
 
   const classes = useStyles();
@@ -72,14 +72,14 @@ function Footer(props) {
               </Typography>
             </div>
             <Typography color="textPrimary" className={classes.footerDesc} gutterBottom>
-              {t('medical-landing.footer_paragraph')}
+              {t("medical-landing.footer_paragraph")}
             </Typography>
             {isDesktop && <Copyright />}
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
           <Grid container spacing={isTablet ? 0 : 4} justifyContent="space-evenly">
-            {footers.map(footer => (
+            {footers.map((footer) => (
               <Grid item xs={12} md={3} key={footer.title} className={classes.siteMapItem}>
                 {isDesktop && (
                   <div>
@@ -112,9 +112,7 @@ function Footer(props) {
                         content: classes.accordionContent,
                       }}
                     >
-                      <strong>
-                        {footer.title}
-                      </strong>
+                      <strong>{footer.title}</strong>
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
                       <ul>

@@ -1,61 +1,55 @@
-import React, { useEffect, useRef } from 'react';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { useTheme } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Fab from '@material-ui/core/Fab';
-import Carousel from 'react-slick';
-import PrevIcon from '@material-ui/icons/ArrowBack';
-import NextIcon from '@material-ui/icons/ArrowForward';
-import { useTranslation } from 'next-i18next';
-import imgApi from '~/public/images/imgAPI';
-import useStyles from './facilities-style';
-import TitleIcon from '../Title/WithIcon';
-import Card from '../Cards/Default';
-import DotsParallax from '../Parallax/Dots';
+import React, { useEffect, useRef } from "react";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
+import Container from "@material-ui/core/Container";
+import Fab from "@material-ui/core/Fab";
+import Carousel from "react-slick";
+import PrevIcon from "@material-ui/icons/ArrowBack";
+import NextIcon from "@material-ui/icons/ArrowForward";
+import { useTranslation } from "next-i18next";
+import imgApi from "~/public/images/imgAPI";
+import useStyles from "./facilities-style";
+import TitleIcon from "../Title/WithIcon";
+import Card from "../Cards/Default";
+import DotsParallax from "../Parallax/Dots";
 
 const facilityList = [
   {
-    title: 'Lorem Ipsum',
-    desc:
-      'Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.',
-    img: imgApi.medical[3]
+    title: "Lorem Ipsum",
+    desc: "Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.",
+    img: imgApi.medical[3],
   },
   {
-    title: 'Etiam rhoncus',
-    desc:
-      'Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.',
-    img: imgApi.medical[6]
+    title: "Etiam rhoncus",
+    desc: "Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.",
+    img: imgApi.medical[6],
   },
   {
-    title: 'Duis fermentum',
-    desc:
-      'Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.',
-    img: imgApi.medical[5]
+    title: "Duis fermentum",
+    desc: "Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.",
+    img: imgApi.medical[5],
   },
   {
-    title: 'Lorem Ipsum',
-    desc:
-      'Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.',
-    img: imgApi.medical[4]
+    title: "Lorem Ipsum",
+    desc: "Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.",
+    img: imgApi.medical[4],
   },
   {
-    title: 'Etiam rhoncus',
-    desc:
-      'Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.',
-    img: imgApi.medical[3]
+    title: "Etiam rhoncus",
+    desc: "Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.",
+    img: imgApi.medical[3],
   },
   {
-    title: 'Duis fermentum',
-    desc:
-      'Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.',
-    img: imgApi.medical[2]
-  }
+    title: "Duis fermentum",
+    desc: "Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.",
+    img: imgApi.medical[2],
+  },
 ];
 
 function Facilities() {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
   const classes = useStyles();
   const slider = useRef(null);
   const settings = {
@@ -66,26 +60,30 @@ function Facilities() {
     arrows: false,
     slidesToScroll: 1,
     variableWidth: true,
-    responsive: [{
-      breakpoint: 1100,
-      settings: {
-        slidesToShow: 3,
-      }
-    }, {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 2,
-      }
-    }, {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-      }
-    }]
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   useEffect(() => {
-    if (theme.direction === 'ltr' && window.innerWidth > 1200) {
+    if (theme.direction === "ltr" && window.innerWidth > 1200) {
       const limit = window.innerWidth > 1400 ? 3 : 2;
       const lastSlide = Math.floor(facilityList.length - limit);
       slider.current.slickGoTo(lastSlide);
@@ -111,7 +109,7 @@ function Facilities() {
                   title={item.title}
                   desc={item.desc}
                   img={item.img}
-                  button={t('medical-landing.services_button')}
+                  button={t("medical-landing.services_button")}
                 />
               </div>
             ))}
@@ -128,7 +126,7 @@ function Facilities() {
       <div className={classes.floatingTitle}>
         <Container fixed>
           <div className={classes.title}>
-            <TitleIcon text={t('medical-landing.services_title')} icon="library_add" extended />
+            <TitleIcon text={t("medical-landing.services_title")} icon="library_add" extended />
             <nav className={classes.arrow}>
               <Fab size="small" onClick={() => slider.current.slickNext()} aria-label="prev" className={classes.margin}>
                 <PrevIcon />

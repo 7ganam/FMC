@@ -1,13 +1,13 @@
 module.exports = {
   medical: {
-    name: 'Medical',
-    desc: 'Luxiren medical - React Single Landing Page Template',
-    prefix: 'luxiren',
-    footerText: 'Luxiren Medical - All Rights Reserved 2021',
-    logoText: 'Luxiren Medical',
-    projectName: 'Medical Theme',
-    url: 'luxireact.ux-maestro.com/medical',
-    img: '/static/images/medical-logo.png',
-    notifMsg: 'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.'
-  }
+    name: "Future Mobility Challenge",
+    desc: "Abu Dhabi, UAEAbu Dhabi, UAE Future Mobility Challenge",
+    prefix: "ADU",
+    footerText: "All Rights Reserved 2023",
+    logoText: "Future Mobility Challenge",
+    projectName: "Future Mobility Challenge",
+    url: "",
+    img: "/static/images/medical-logo.png",
+    notifMsg: "Abu Dhabi, UAEAbu Dhabi, UAE Future Mobility Challenge",
+  },
 };
