@@ -107,11 +107,11 @@ function VideoBanner() {
   return (
     <div className={classes.heroContent}>
       <Hidden smUp>
-        <figure className={classes.mobileCover}>
-          <img src={imgApi.medical[0]} alt="cover" />
+        <figure className={classes.mobileCover + " bg-slate-400"}>
+          {/* <img src={imgApi.medical[0]} alt="cover" /> */}
         </figure>
       </Hidden>
-      <Container fixed={isDesktop}>
+      <Container fixed={isDesktop} className={`${isMobile ? "bg-slate-400" : ""}`}>
         <Grid container spacing={6}>
           <Grid item md={6} xs={12}>
             <div className={classes.bannerText}>
@@ -152,7 +152,7 @@ function VideoBanner() {
                         </IconButton>
                       )}
                     </Hidden>
-                    {!play || isMobile ? <img src={imgApi.medical[0]} alt="cover" /> : null}
+                    {/* {!play || isMobile ? <img src={imgApi.medical[0]} alt="cover" /> : null} */}
                     {yt.use && (
                       <div className={classes.video}>
                         <Hidden mdDown>
