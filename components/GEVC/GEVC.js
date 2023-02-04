@@ -16,10 +16,11 @@ import useTitle from "../Title/title-style";
 import useStyles from "./GEVC-style";
 import { Paper } from "@material-ui/core";
 
-import event from "~/public/images/attachment 4.jpg";
+import event from "~/public/images/GEVC photo.jpg";
 import Button from "@material-ui/core/Button";
 
 import { AiFillCheckSquare } from "react-icons/ai";
+import logo2 from "~/public/images/attachment 2.png";
 
 const categories = ["all", "Orthopedic", "Nutritionist", "Pediatric", "Anaesthestic"];
 
@@ -101,9 +102,11 @@ function GEVC() {
       <Container style={{ zIndex: "1" }}>
         <Grid container spacing={isDesktop ? 3 : 0} justifyContent="center">
           <Grid item lg={4} md={2} xs={12}>
-            <Typography variant="h4" className={title.primary}>
-              {"The Global Electric Vehicle Challenge®"}
-            </Typography>
+            <div className="w-full flex justify-center mb-4">
+              <Paper style={{ width: "200px", padding: "10px" }}>
+                <img src={logo2} alt="logo" style={{ width: "100%" }} />
+              </Paper>
+            </div>
             <div
               style={{ boxShadow: "-6px 5px 12px 13px rgb(0 0 0 / 6%)" }}
               className="sticky w-full h-[250px]  bg-slate-600 top-[-150px] left-[50px] z-50 rounded-r-full rounded-b-full overflow-hidden"
@@ -116,32 +119,33 @@ function GEVC() {
               style={{ boxShadow: "-6px 5px 12px 13px rgb(0 0 0 / 6%)" }}
               className="w-full min-h-[300px] text-xl md:text-2xl p-6 z-50"
             >
-              The Global Electric Vehicle Challenge® (GEVC) is the newest international university competition that
-              raises the bar in terms of technology, innovation and engineering skills. Student teams design, build,
-              test and race high performance formula-style electric racecars. The GEVC places great emphasis on
+              The Global Electric Vehicle Challenge® (GEVC) is the newest international
+              <span className="italic font-bold text-blue-500"> university competition </span>
+              that raises the bar in terms of technology, innovation and engineering skills. Student teams design,
+              build, test and race high performance formula-style electric racecars. The GEVC places great emphasis on
               technical innovation, rigorous use of design, analysis and simulation tools in addition to controlled
               testing where applicable. Conversely, the GEVC discourages large budgets and aims to minimize any
               advantages gained through the purchase of high-cost components and materials. These objectives are met in
               two ways:
-              <div className="flex gap-2 ml-5 mt-3">
-                <AiFillCheckSquare className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] text-blue-400" />
+              <div className="flex gap-2 ml-5 mt-5">
+                <AiFillCheckSquare className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] text-blue-400 mt-2" />
                 <div className="ml-1">
                   The competition is divided into two stages whereby in stage 1 team submissions are judged and rewarded
                   for their technical innovation, rigorous use of design, analysis and simulation tools, and controlled
-                  testing;
+                  testing; and
                 </div>
               </div>
-              <div className="flex gap-2 ml-5 mt-3">
-                <AiFillCheckSquare className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] text-blue-400" />
+              <div className="flex gap-2 ml-5 my-5">
+                <AiFillCheckSquare className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] text-blue-400 mt-2" />
                 <div className="ml-1">
                   Certain components such as motors, controllers, batteries, wheels and tires are specified in the
-                  regulations and must be used by all teams.;
+                  regulations and must be used by all teams.
                 </div>
               </div>
               Notwithstanding the aforementioned, there are vast opportunities for creative design and technical
-              innovation in the chassis/steering/suspension design, aerodynamics, battery management, electromechanical
+              innovation in the chassis/steering/ suspension design, aerodynamics, battery management, electromechanical
               systems and controls, strategy, telemetry, software engineering, materials science, among others.
-              <div className="w-[100%] h-[1px] bg-slate-300 my-4 m-auto"></div>
+              <div className="w-[100%] h-[1px] bg-slate-300 my-4 m-auto" />
               <Button
                 size="large"
                 variant="contained"

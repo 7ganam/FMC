@@ -31,11 +31,6 @@ function createData(name, url, offset) {
   };
 }
 
-const LinkBtn = React.forwardRef(function LinkBtn(props, ref) {
-  // eslint-disable-line
-  return <AnchorLink to={props.to} {...props} innerRef={ref} />; // eslint-disable-line
-});
-
 function Header(props) {
   // Theme breakpoints
   const theme = useTheme();
@@ -65,6 +60,7 @@ function Header(props) {
     createData(navMenu[1], "#" + navMenu[1], 200),
     createData(navMenu[2], "#" + navMenu[2], 200),
     createData(navMenu[3], "#" + navMenu[3], 200),
+    createData(navMenu[4], "#" + navMenu[4], 200),
   ]);
   const [openDrawer, setOpenDrawer] = useState(false);
   const handleOpenDrawer = () => {

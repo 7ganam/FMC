@@ -21,6 +21,8 @@
   "ar": "󠁥󠁮󠁧󠁿العربيّة",
   "notif_msg": "This is an example of a message that is commonly used for important information to visitors or users. Please click the button beside to close this message.",
   "medical-landing": {
+    "header_partners": "Partners",
+    "header_officials": "Officials",
     "header_about": "about",
     "header_EVGP": "EVGP",
     "header_GEVC": "GEVC",
@@ -34,16 +36,16 @@
     "header_theme": "theme mode",
     "header_dark": "dark",
     "header_light": "light",
-    "banner_title": "ADU Future Mobility Challenge",
-    "banner_subtitle": "Held for the first time in Abu Dhabi, UAE on March 18, 2023",
+    "banner_title": "Future Mobility Challenge",
+    "banner_subtitle": "Held for the first time in the UAE on March 18, 2023",
     "banner_search": "search",
     "about_title": "About FMC",
-    "about_subtitle": "The Abu Dhabi University Future Mobility Challenge (ADU FMC) consists of two competitions for universities and high schools in which students design, build, test and race single person electric race cars.",
+    "about_subtitle": "The ADU Future Mobility Challenge (FMC) consists of the Electric Vehicle Grand Prix (EVGP) for high schools and the Global Electric Vehicle Challenge (GEVC) for universities in which students design, build, test and race single person electric cars. ",
     "about_doctor": "countries",
     "about_competitions": "competitions",
     "about_teams": "teams",
     "about_students": "students",
-    "about_quote": "Held for the first time in Abu Dhabi",
+    "about_quote": "Held for the first time in the UAE",
     "services_title": "Our Facilities",
     "details_title": "Details",
     "services_button": "see detail",
@@ -56,6 +58,6 @@
     "cta_subtitle": "Global Education Energy Environment (Global EEE) is a US-based 501(c)(3) nonprofit organization comprised of a worldwide network of individuals with backgrounds in numerous industries. For over thirty years key members of Global EEE have helped organize international student competitions that promote Education, Energy efficiency, and Environmental consciousness (the three E’s). We are passionate about what we do! Every member of our team has in-depth experience and extensive involvement with student competitions either as a past participant or official/organizer. The organization is selective about the events it partakes in with the requirement that they must promote the three E’s and are not-for-profit.",
     "cta_btn": "Contact Us!",
     "clinic_title": "Venue and location",
-    "footer_paragraph": "Held for the first time in Abu Dhabi, UAE on March 18, 2023"
+    "footer_paragraph": "Held for the first time in UAE Saturday 18 March, 2023"
   }
 }

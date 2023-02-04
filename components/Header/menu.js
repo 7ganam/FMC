@@ -1,3 +1,3 @@
-const menu = ["about", "EVGP", "GEVC", "sponsors", "location"];
+const menu = ["about", "EVGP", "GEVC", "officials", "partners", "location"];
 
 export default menu;

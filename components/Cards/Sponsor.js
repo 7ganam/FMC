@@ -7,7 +7,7 @@ import useStyles from "./cards-style";
 
 function Sponsor(props) {
   const classes = useStyles();
-  const { logo, website, title } = props;
+  const { logo, website, title, role } = props;
   return (
     <Paper className={classes.profile}>
       <div className={classes.personBlock}>
@@ -17,14 +17,15 @@ function Sponsor(props) {
       </div>
       <hr className={classes.divider} />
       <div className={classes.action}>
-        <div className={classes.property}>
-          <div className={classes.nameCard}>
-            <Typography>{title}</Typography>
+        <div className="flex flex-col justify-center items-center  w-full">
+          <Typography style={{ fontWeight: "bold" }}>{title}</Typography>
+          <Typography>{role}</Typography>
+          <div className="mt-2">
+            <Button variant="contained" color="secondary" className={classes.button} href={website}>
+              website
+            </Button>
           </div>
         </div>
-        <Button variant="contained" color="secondary" className={classes.button}>
-          {"website"}
-        </Button>
       </div>
     </Paper>
   );

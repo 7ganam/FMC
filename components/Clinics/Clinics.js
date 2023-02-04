@@ -61,14 +61,15 @@ function MapAdress() {
               <div className="flex gap-2 ml-3 mt-1">
                 <AiFillCheckSquare className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] text-blue-400" />
                 <div className="ml-3 text-xl">
-                  The ADU Future Mobility Challenge will be held at Al Hudayriyat Island on a 3 km world class track.
+                  The ADU Future Mobility Challenge will be held at Al Hudayriyat Island in Abu Dhabi, UAE on a 3 km
+                  world class track.
                 </div>
               </div>
               <div className="flex gap-2 ml-3 mt-4">
                 <AiFillCheckSquare className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] text-blue-400" />
                 <div className="ml-3 text-2l">
-                  Guests will have the opportunity to visit the team garages up close and learn about the participating
-                  schools and university teams, as well as our partners and sponsors
+                  Guests will have the opportunity to visit the team garages and get an up close look at the cars to
+                  learn about the participating schools and university teams, as well as our partners and sponsors.
                 </div>
               </div>
             </div>

@@ -3,20 +3,16 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import clsx from "clsx";
 import { useTheme } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import PlayIcon from "@material-ui/icons/PlayArrow";
 import PauseIcon from "@material-ui/icons/Pause";
-import SearchIcon from "@material-ui/icons/Search";
 import YouTube from "react-youtube";
 import Paper from "@material-ui/core/Paper";
-import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
 import { useTranslation } from "next-i18next";
 import { useText } from "~/theme/common";
-import imgApi from "~/public/images/imgAPI";
 import yt from "~/youtube";
 import useStyles from "./banner-style";
 import DotsParallax from "../Parallax/Dots";
@@ -40,10 +36,6 @@ function VideoBanner() {
   const [playCtrl, setPlayedCtrl] = useState(true);
   const [player, setPlayer] = useState([]);
 
-  // Search box
-  const [values, setValue] = useState({
-    query: "",
-  });
   const classes = useStyles();
 
   useEffect(() => {
@@ -100,10 +92,6 @@ function VideoBanner() {
     },
   };
 
-  const handleChange = (event, type) => {
-    setValue({ ...values, [type]: event.target.value });
-  };
-
   return (
     <div className={classes.heroContent}>
       <Hidden smUp>
@@ -115,10 +103,11 @@ function VideoBanner() {
         <Grid container spacing={6}>
           <Grid item md={6} xs={12}>
             <div className={classes.bannerText}>
-              <div className={classes.title}>
-                <Typography variant="h3" className={clsx(classes.textHelper, text.title)}>
-                  {t("medical-landing.banner_title")}
-                </Typography>
+              <div variant="h5" className="mt-[150px] mb-1 font-extrabold text-2xl">
+                Abu Dhabi University
+              </div>
+              <div>
+                <Typography variant="h3">{t("medical-landing.banner_title")}</Typography>
               </div>
               <Typography className={clsx(classes.subtitle, text.subtitle2)} variant="h5">
                 {t("medical-landing.banner_subtitle")}

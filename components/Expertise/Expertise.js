@@ -91,7 +91,8 @@ function Expertise() {
             <div className="flex gap-2 ml-3 mt-1">
               <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
               <Typography className="ml-3">
-                Learning about project management and team work so they are better prepared for their careers
+                Developing soft skills and learning about project management and team work so they are better prepared
+                for their careers
               </Typography>
             </div>
             <div className="flex gap-2 ml-3 mt-1">

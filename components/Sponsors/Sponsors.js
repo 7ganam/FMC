@@ -22,7 +22,9 @@ import s4 from "~/public/images/sponsors/EVIS logo.jpg";
 import s5 from "~/public/images/sponsors/Global EEE logo.png";
 import s6 from "~/public/images/sponsors/IEEE logo.png";
 import s7 from "~/public/images/sponsors/Mathworks logo.png";
-
+import s8 from "~/public/images/sponsors/3elemLogo.png";
+import s9 from "~/public/images/sponsors/Al Nabooda logo.png";
+import s10 from "~/public/images/sponsors/projotecLogo.png";
 const categories = ["all", "Orthopedic", "Nutritionist", "Pediatric", "Anaesthestic"];
 
 const doctorsData = [
@@ -71,13 +73,15 @@ const doctorsData = [
 ];
 
 const sponsorsData = [
-  { logo: s1, title: "ADU", website: "" },
-  { logo: s2, title: "Altair", website: "" },
-  { logo: s3, title: "ASME", website: "" },
-  { logo: s4, title: "EVIs", website: "" },
-  { logo: s5, title: "Global EEE", website: "" },
-  { logo: s6, title: "IEEE", website: "" },
-  { logo: s7, title: "Mathworks", website: "" },
+  { logo: s5, title: "Global EEE", website: "https://www.ieee.org/", role: "Professional Association" },
+  { logo: s1, title: "ADU", website: "https://www.adu.ac.ae", role: "Academic Partner" },
+  { logo: s8, title: "3elm", website: "https://3elmeducation.com/ ", role: "Education Partner" },
+  { logo: s10, title: "ProjoTeck", website: "https://projotech.com/", role: "EdTech Partner" },
+  { logo: s9, title: "Al Nabooda", website: "https://nabooda-auto.com/", role: "Automotive Partner" },
+  { logo: s4, title: "EVIs", website: "https://www.evinnovationsummit.com/ ", role: "Knowledge Partner" },
+  { logo: s7, title: "Mathworks", website: "https://www.mathworks.com/", role: "Software Partner" },
+  { logo: s3, title: "ASME", website: "https://www.asme.org/", role: "Professional Association" },
+  { logo: s6, title: "IEEE", website: "https://globaleee.org/", role: "Technical Organizer" },
 ];
 
 function Sponsors() {
@@ -97,11 +101,11 @@ function Sponsors() {
   }
 
   const renderCard = (item, index) => (
-    <SponsorCard key={index.toString()} website={item.website} title={item.title} logo={item.logo} />
+    <SponsorCard key={index.toString()} website={item.website} title={item.title} logo={item.logo} role={item.role} />
   );
 
   return (
-    <div className={classes.root} id="sponsors">
+    <div className={classes.root} id="partners">
       <div className={classes.deco} />
       <Container fixed={isDesktop}>
         <Grid container spacing={isDesktop ? 3 : 0} justifyContent="center">
@@ -109,7 +113,7 @@ function Sponsors() {
             <ScrollAnimation animateOnce animateIn="fadeInLeftShort" offset={-100} delay={200} duration={0.3}>
               <div className={classes.sideFilter}>
                 <Typography variant="h4" className={title.primary}>
-                  {t("medical-landing.sponsors_title")}
+                  Partners
                 </Typography>
               </div>
             </ScrollAnimation>

@@ -21,6 +21,7 @@ import AskDoctors from "~/components/AskDoctors";
 import Sponsors from "~/components/Sponsors";
 import EVGP from "~/components/EVGP";
 import GEVC from "~/components/GEVC";
+import Officials from "../../components/Officials";
 import CallAction from "~/components/CallAction";
 import Clinics from "~/components/Clinics";
 import OvalTop from "~/components/Parallax/OvalTop";
@@ -108,6 +109,9 @@ function Landing(props) {
           </section>
           <section className={isMobile ? classes.spaceTopShort : classes.spaceTop} id="ask-doctors">
             <GEVC />
+          </section>
+          <section className={isMobile ? classes.spaceTopShort : classes.spaceTop} id="ask-doctors">
+            <Officials />
           </section>
           <section className={isMobile ? classes.spaceTopShort : classes.spaceTop} id="ask-doctors">
             <Sponsors />

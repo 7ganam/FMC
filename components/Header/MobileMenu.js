@@ -1,27 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import { useTranslation } from 'next-i18next';
-import routeLink from '~/public/text/link';
-import useStyles from './header-style';
-import navMenu from './menu';
+import React from "react";
+import PropTypes from "prop-types";
+import clsx from "clsx";
+import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import { useTranslation } from "next-i18next";
+import routeLink from "~/public/text/link";
+import useStyles from "./header-style";
+import navMenu from "./menu";
 
 function MobileMenu(props) {
   const classes = useStyles();
   const { toggleDrawer, open } = props;
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
 
   const SideList = () => (
-    <div
-      className={classes.mobileNav}
-      role="presentation"
-      onClick={toggleDrawer}
-      onKeyDown={toggleDrawer}
-    >
+    <div className={classes.mobileNav} role="presentation" onClick={toggleDrawer} onKeyDown={toggleDrawer}>
       <div className={clsx(classes.menu, open && classes.menuOpen)}>
         <List component="nav">
           {navMenu.map((item, index) => (
@@ -30,18 +25,18 @@ function MobileMenu(props) {
               component="a"
               href={`#${item}`}
               key={index.toString()}
-              style={{ animationDuration: index * 0.15 + 's' }}
+              style={{ animationDuration: index * 0.15 + "s" }}
             >
-              <ListItemText primary={t('medical-landing.header_' + item)} className={classes.menuList} />
+              <ListItemText primary={t("medical-landing.header_" + item)} className={classes.menuList} />
             </ListItem>
           ))}
           <ListItem
             button
             component="a"
             href={routeLink.medical.contact}
-            style={{ animationDuration: navMenu.length * 0.15 + 's' }}
+            style={{ animationDuration: navMenu.length * 0.15 + "s" }}
           >
-            <ListItemText primary={t('medical-landing.header_contact')} className={classes.menuList} />
+            <ListItemText primary={t("medical-landing.header_contact")} className={classes.menuList} />
           </ListItem>
         </List>
       </div>
@@ -54,7 +49,7 @@ function MobileMenu(props) {
       onClose={toggleDrawer}
       onOpen={toggleDrawer}
       classes={{
-        paper: classes.paperNav
+        paper: classes.paperNav,
       }}
     >
       <SideList />
