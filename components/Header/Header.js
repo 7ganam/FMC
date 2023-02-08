@@ -56,7 +56,7 @@ function Header(props) {
   const { t } = useTranslation("common");
 
   const [menuList] = useState([
-    createData(navMenu[0], "#" + navMenu[0], 200),
+    createData("About", "#about", 200),
     createData(navMenu[1], "#" + navMenu[1], 200),
     createData(navMenu[2], "#" + navMenu[2], 200),
     createData(navMenu[3], "#" + navMenu[3], 200),
@@ -93,13 +93,13 @@ function Header(props) {
                   <Link href={routeLink.medical.home}>
                     <a>
                       <img src={logo} alt="logo" />
-                      {brand.medical.name}
+                      Future Mobility Challenge
                     </a>
                   </Link>
                 ) : (
                   <AnchorLink href="#home">
                     <img src={logo} alt="logo" />
-                    {brand.medical.name}
+                    Future Mobility Challenge
                   </AnchorLink>
                 )}
               </div>
@@ -107,21 +107,63 @@ function Header(props) {
             <nav className={clsx(classes.navMenu, invert && classes.invert)}>
               {isDesktop && (
                 <Scrollspy items={navMenu} currentClassName="active">
-                  {menuList.map((item) => (
-                    <li key={item.id.toString()}>
-                      {invert ? (
-                        // eslint-disable-next-line
-                        <Button href={"/" + item.url}>{t("medical-landing.header_" + item.name)}</Button>
-                      ) : (
-                        // eslint-disable-next-line
-                        <Button component={AnchorLink} offset={item.offset || 0} href={item.url}>
-                          {t("medical-landing.header_" + item.name)}
-                        </Button>
-                      )}
-                    </li>
-                  ))}
+                  <li key="about">
+                    {invert ? (
+                      // eslint-disable-next-line
+                      <Button href={"/" + "#about"}>About</Button>
+                    ) : (
+                      // eslint-disable-next-line
+                      <Button component={AnchorLink} offset={150} href="#about">
+                        About
+                      </Button>
+                    )}
+                  </li>
+                  <li key="EVGP">
+                    {invert ? (
+                      // eslint-disable-next-line
+                      <Button href={"/" + "#EVGP"}>About</Button>
+                    ) : (
+                      // eslint-disable-next-line
+                      <Button component={AnchorLink} offset={150} href="#EVGP">
+                        EVGP
+                      </Button>
+                    )}
+                  </li>
+                  <li key="GEVC">
+                    {invert ? (
+                      // eslint-disable-next-line
+                      <Button href={"/" + "#GEVC"}>About</Button>
+                    ) : (
+                      // eslint-disable-next-line
+                      <Button component={AnchorLink} offset={150} href="#GEVC">
+                        GEVC
+                      </Button>
+                    )}
+                  </li>
+                  <li key="Officials">
+                    {invert ? (
+                      // eslint-disable-next-line
+                      <Button href={"/" + "#officials"}>About</Button>
+                    ) : (
+                      // eslint-disable-next-line
+                      <Button component={AnchorLink} offset={150} href="#officials">
+                        Officials
+                      </Button>
+                    )}
+                  </li>
+                  <li key="Partners">
+                    {invert ? (
+                      // eslint-disable-next-line
+                      <Button href={"/" + "#partners"}>About</Button>
+                    ) : (
+                      // eslint-disable-next-line
+                      <Button component={AnchorLink} offset={150} href="#partners">
+                        Partners
+                      </Button>
+                    )}
+                  </li>
                   <li>
-                    <Button href={routeLink.medical.contact}>{t("medical-landing.header_contact")}</Button>
+                    <Button href="contact">Contact Us</Button>
                   </li>
                 </Scrollspy>
               )}

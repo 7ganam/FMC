@@ -39,10 +39,12 @@ function About() {
           </Grid>
           <Grid item md={7} xs={12}>
             <Typography className={clsx(title.default, text.subtitle)} variant="h4">
-              {t("medical-landing.about_subtitle")}
+              The ADU Future Mobility Challenge (FMC) consists of the Electric Vehicle Grand Prix (EVGP) for high
+              schools and the Global Electric Vehicle Challenge (GEVC) for universities in which students design, build,
+              test and race single person electric cars.
             </Typography>
             <Counter />
-            <blockquote>{t("medical-landing.about_quote")}</blockquote>
+            <blockquote>Held for the first time in the UAE</blockquote>
           </Grid>
         </Grid>
       </Container>

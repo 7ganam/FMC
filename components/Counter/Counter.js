@@ -18,7 +18,7 @@ function Counter() {
               <div className={classes.text}>
                 <Typography variant="h3">2</Typography>
                 <Typography component="p" style={{ fontSize: "18px" }}>
-                  {t("medical-landing.about_competitions")}
+                  Competitions
                 </Typography>
               </div>
             </div>
@@ -28,7 +28,7 @@ function Counter() {
               <div className={classes.text}>
                 <Typography variant="h3">5</Typography>
                 <Typography component="p" style={{ fontSize: "18px" }}>
-                  {t("medical-landing.about_doctor")}
+                  Countries
                 </Typography>
               </div>
             </div>
@@ -38,7 +38,7 @@ function Counter() {
               <div className={classes.text}>
                 <Typography variant="h3">21</Typography>
                 <Typography component="p" style={{ fontSize: "18px" }}>
-                  {t("medical-landing.about_teams")}
+                  Teams
                 </Typography>
               </div>
             </div>
@@ -47,7 +47,7 @@ function Counter() {
             <div className={classes.counterItem + " mt-5"}>
               <div className={classes.text}>
                 <Typography variant="h2">500+</Typography>
-                <Typography component="p">{t("medical-landing.about_students")}</Typography>
+                Students
               </div>
             </div>
           </Grid>

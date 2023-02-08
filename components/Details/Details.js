@@ -39,7 +39,7 @@ function Details() {
       <div className={classes.floatingTitle}>
         <Container fixed>
           <div className={classes.title}>
-            <TitleIcon text={t("medical-landing.details_title")} icon="library_add" extended />
+            <TitleIcon text="Details" icon="library_add" extended />
           </div>
         </Container>
       </div>

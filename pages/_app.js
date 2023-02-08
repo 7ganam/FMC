@@ -98,16 +98,11 @@ function MyApp(props) {
       <StylesProvider jss={jss}>
         <ThemeProvider theme={muiTheme}>
           <CssBaseline />
-          <LoadingBar height={0} color={theme.palette.primary.light} progress={loading} className="top-loading-bar" />
+          {/* <LoadingBar height={0} color={theme.palette.primary.light} progress={loading} className="top-loading-bar" /> */}
           <div id="main-wrap">
-            <PageTransition timeout={300} classNames="page-fade-transition">
-              <Component
-                {...pageProps}
-                onToggleDark={toggleDarkTheme}
-                onToggleDir={toggleDirection}
-                key={router.route}
-              />
-            </PageTransition>
+            {/* <PageTransition timeout={300} classNames="page-fade-transition"> */}
+            <Component {...pageProps} onToggleDark={toggleDarkTheme} onToggleDir={toggleDirection} key={router.route} />
+            {/* </PageTransition> */}
           </div>
         </ThemeProvider>
       </StylesProvider>

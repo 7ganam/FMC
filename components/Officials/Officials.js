@@ -37,9 +37,9 @@ function Officials() {
               develop and enforce the rules and regulations during the competitions. The cars undergo a rigorous
               technical inspection prior to their participation on race day, and continue to be monitored throughout the
               event to ensure their compliance with the regulations.
-              <div className="w-[100%] h-[1px] bg-slate-300 my-4 m-auto" />
+              <div className="w-[100%] h-[1px] bg-slate-300 my-4 m-auto placeholder:" />
               Meet some of our team
-              <a href="https://gevc.globaleee.org/officials.php" className="font-bold">
+              <a href="https://gevc.globaleee.org/officials.php" className="font-bold  text-blue-500">
                 {"  here."}
               </a>
             </Paper>

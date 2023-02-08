@@ -8,7 +8,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 // Use this below for Server Side Render/Translation (SSR)
 // import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 // Use this below for Static Site Generation (SSG)
-import { getStaticPaths, makeStaticProps } from "~/lib/getStatic";
 import brand from "~/public/text/brand";
 import Header from "~/components/Header";
 import VideoBanner from "~/components/VideoBanner";
@@ -21,7 +20,7 @@ import AskDoctors from "~/components/AskDoctors";
 import Sponsors from "~/components/Sponsors";
 import EVGP from "~/components/EVGP";
 import GEVC from "~/components/GEVC";
-import Officials from "../../components/Officials";
+import Officials from "~/components/Officials";
 import CallAction from "~/components/CallAction";
 import Clinics from "~/components/Clinics";
 import OvalTop from "~/components/Parallax/OvalTop";
@@ -147,9 +146,5 @@ Landing.propTypes = {
 
 // Use this below for Server Side Render/Translation (SSR)
 // export const getStaticProps = async ({ locale }) => ({ props: { ...await serverSideTranslations(locale, ['common']) } });
-
-// Use this below for Static Site Generation (SSG)
-const getStaticProps = makeStaticProps(["common"]);
-export { getStaticPaths, getStaticProps };
 
 export default Landing;

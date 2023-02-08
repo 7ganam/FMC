@@ -61,7 +61,7 @@ function Expertise() {
           <Grid item md={5} xs={12}>
             <div className={classes.titleDeco}>
               {isDesktop && <div className={classes.decoration} />}
-              <TitleDeco text={t("medical-landing.expertise_title")} />
+              <TitleDeco text="Benefits To Students" />
               <ScrollAnimation animateOnce animateIn="zoomInShort" offset={-100} delay={100} duration={0.3}>
                 <div className={classes.parallaxWrap}>
                   <animated.div style={{ transform: position.xy?.interpolate(trans1) }}>
@@ -78,51 +78,53 @@ function Expertise() {
             </div>
           </Grid>
           <Grid item lg={6} md={7} xs={12}>
-            <Typography className={clsx(title.default, text.subtitle)} variant="h4">
-              {t("medical-landing.expertise_subtitle")}
-            </Typography>
-            <Typography>{t("medical-landing.expertise_paragraph")}</Typography>
-            <div className="flex gap-2 ml-3 mt-1">
-              <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
-              <Typography className="ml-3">
-                Putting to practice what they learn in the classroom by designing and building a working product
+            <div className="md:mt-[-100px]">
+              <Typography className={clsx(title.default, text.subtitle)} variant="h4">
+                Benefits to the students
               </Typography>
-            </div>
-            <div className="flex gap-2 ml-3 mt-1">
-              <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
-              <Typography className="ml-3">
-                Developing soft skills and learning about project management and team work so they are better prepared
-                for their careers
-              </Typography>
-            </div>
-            <div className="flex gap-2 ml-3 mt-1">
-              <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
-              <Typography className="ml-3">
-                Understanding energy efficiency which they can translate to any project they work on in the future
-              </Typography>
-            </div>
-            <div className="flex gap-2 ml-3 mt-1">
-              <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
-              <Typography className="ml-3">
-                Representing their countries at the highest level against the best students and minds on the planet
-              </Typography>
-            </div>
-
-            <Hidden xsDown>
-              <div className={classes.runningTag}>
-                <Carousel {...settings}>
-                  {expertiseList.map((group, indexGroup) => (
-                    <div className={classes.tagGroup} key={indexGroup.toString()}>
-                      {group.map((item, indexChild) => (
-                        <span className={classes.tagItem} key={indexChild.toString()}>
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  ))}
-                </Carousel>
+              <Typography variant="h6">The benefits to students are numerous, among them:</Typography>
+              <div className="flex gap-2 ml-3 mt-1">
+                <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
+                <div className="text-2xl ml-3 mt-1">
+                  Putting to practice what they learn in the classroom by designing and building a working product
+                </div>
               </div>
-            </Hidden>
+              <div className="flex gap-2 ml-3 mt-1">
+                <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
+                <div className="text-2xl ml-3 mt-1">
+                  Developing soft skills and learning about project management and team work so they are better prepared
+                  for their careers
+                </div>
+              </div>
+              <div className="flex gap-2 ml-3 mt-1">
+                <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
+                <div className="text-2xl ml-3 mt-1">
+                  Understanding energy efficiency which they can translate to any project they work on in the future
+                </div>
+              </div>
+              <div className="flex gap-2 ml-3 mt-1">
+                <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
+                <div className="text-2xl ml-3 mt-1">
+                  Representing their countries at the highest level against the best students and minds on the planet
+                </div>
+              </div>
+
+              <Hidden xsDown>
+                <div className={classes.runningTag}>
+                  <Carousel {...settings}>
+                    {expertiseList.map((group, indexGroup) => (
+                      <div className={classes.tagGroup} key={indexGroup.toString()}>
+                        {group.map((item, indexChild) => (
+                          <span className={classes.tagItem} key={indexChild.toString()}>
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    ))}
+                  </Carousel>
+                </div>
+              </Hidden>
+            </div>
           </Grid>
         </Grid>
       </Container>

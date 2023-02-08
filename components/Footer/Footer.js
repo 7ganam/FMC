@@ -71,9 +71,10 @@ function Footer(props) {
                 {brand.medical.projectName}
               </Typography>
             </div>
-            <Typography color="textPrimary" className={classes.footerDesc} gutterBottom>
-              {t("medical-landing.footer_paragraph")}
-            </Typography>
+            <div color="textPrimary" className={classes.footerDesc} gutterBottom>
+              Held for the first time in UAE
+              <div>Saturday 18 March, 2023</div>
+            </div>
             {isDesktop && <Copyright />}
           </Box>
         </Grid>
@@ -146,7 +147,7 @@ function Footer(props) {
               <i className="ion-logo-linkedin" />
             </IconButton>
           </div>
-          <SelectLang toggleDir={toggleDir} />
+          {/* <SelectLang toggleDir={toggleDir} /> */}
         </Grid>
       </Grid>
       {isMobile && (

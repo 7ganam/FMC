@@ -107,10 +107,10 @@ function VideoBanner() {
                 Abu Dhabi University
               </div>
               <div>
-                <Typography variant="h3">{t("medical-landing.banner_title")}</Typography>
+                <Typography variant="h3">Future Mobility Challenge</Typography>
               </div>
               <Typography className={clsx(classes.subtitle, text.subtitle2)} variant="h5">
-                {t("medical-landing.banner_subtitle")}
+                Held for the first time in the UAE on March 18, 2023
               </Typography>
               <div
                 className="flex gap-5
@@ -146,7 +146,7 @@ function VideoBanner() {
                       <div className={classes.video}>
                         <Hidden mdDown>
                           <YouTube
-                            videoId="zxBCJNPXUJI"
+                            videoId="ekbE_TtxolI"
                             opts={opts}
                             onReady={_onReady}
                             onEnd={_onEnd}
