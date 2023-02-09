@@ -146,7 +146,7 @@ function VideoBanner() {
                       <div className={classes.video}>
                         <Hidden mdDown>
                           <YouTube
-                            videoId="ekbE_TtxolI"
+                            videoId="_4NaRiqO500"
                             opts={opts}
                             onReady={_onReady}
                             onEnd={_onEnd}

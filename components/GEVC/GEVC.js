@@ -151,6 +151,7 @@ function GEVC() {
                 variant="contained"
                 color="primary"
                 href={"https://gevc.globaleee.org/"}
+                target="_blank"
                 // className={classes.button}
                 className="mt-2 ml-auto"
               >

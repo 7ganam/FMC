@@ -93,16 +93,16 @@ function Contact() {
       </Hidden>
       <Container maxWidth="md">
         <Typography variant="h3" gutterBottom className={text.title}>
-          {t("contact_title")}
+          Contact us
         </Typography>
-        <Typography className={clsx(classes.desc, text.subtitle2)}>{t("contact_subtitle")}</Typography>
+        <Typography className={clsx(classes.desc, text.subtitle2)}>Send us a message</Typography>
         <div className={classes.form}>
           <ValidatorForm onSubmit={handleSubmit} onError={(errors) => console.log(errors)}>
             <Grid container spacing={6}>
               <Grid item sm={6} xs={12}>
                 <TextValidator
                   className={classes.input}
-                  label={t("form_name")}
+                  label={"name"}
                   onChange={handleChange("name")}
                   name="Name"
                   value={values.name}
@@ -113,7 +113,7 @@ function Contact() {
               <Grid item sm={6} xs={12}>
                 <TextValidator
                   className={classes.input}
-                  label={t("form_email")}
+                  label={"email"}
                   onChange={handleChange("email")}
                   name="Email"
                   value={values.email}
@@ -124,7 +124,7 @@ function Contact() {
               <Grid item sm={6} xs={12}>
                 <TextValidator
                   className={classes.input}
-                  label={t("form_phone")}
+                  label={"phone"}
                   onChange={handleChange("phone")}
                   name="Phone"
                   value={values.phone}
@@ -133,7 +133,7 @@ function Contact() {
               <Grid item sm={6} xs={12}>
                 <TextValidator
                   className={classes.input}
-                  label={t("form_company")}
+                  label={"company"}
                   onChange={handleChange("company")}
                   name="Company"
                   value={values.company}
@@ -144,7 +144,7 @@ function Contact() {
                   multiline
                   rows="6"
                   className={classes.input}
-                  label={t("form_message")}
+                  label={"message"}
                   onChange={handleChange("message")}
                   name="Message"
                   value={values.message}
@@ -163,16 +163,10 @@ function Contact() {
                     color="primary"
                   />
                 }
-                label={
-                  <span>
-                    {t("form_terms")}
-                    <br />
-                    <a href="#">{t("form_privacy")}</a>
-                  </span>
-                }
+                label={<span>I'm not a robot</span>}
               />
               <Button variant="contained" type="submit" color="primary" size="large">
-                {t("form_send")}
+                Send
                 <SendIcon className={classes.rightIcon} />
               </Button>
             </div>

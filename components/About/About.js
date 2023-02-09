@@ -34,7 +34,7 @@ function About() {
         <Grid container spacing={isDesktop ? 6 : 2}>
           <Grid item md={5} xs={12}>
             <div className={align.textCenter}>
-              <TitleDeco bg={race} text={t("medical-landing.about_title")} />
+              <TitleDeco bg={race} text="About Us" />
             </div>
           </Grid>
           <Grid item md={7} xs={12}>

@@ -150,19 +150,19 @@ const useStyles = makeStyles((theme) => ({
   videoWrap: {
     position: "relative",
     overflow: "hidden",
-    borderRadius: "50%",
+    borderRadius: "35%",
     borderTopLeftRadius: 0,
-    width: 450,
-    height: 450,
-    marginTop: theme.spacing(8),
+    width: 440,
+    height: 400,
+    marginTop: "150px",
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
   },
   videoFigure: {
     position: "absolute",
-    width: "100%",
-    height: "100%",
+    width: 550,
+    height: 400,
   },
   video: {},
   visualContent: {
@@ -184,13 +184,13 @@ const useStyles = makeStyles((theme) => ({
     "& $video": {
       display: "block",
       width: "100%",
-      top: 98,
+      top: 0,
       position: "absolute",
       left: 30,
       "& iframe": {
         position: "relative",
         top: -120,
-        left: -180,
+        left: -350,
         height: 640,
       },
     },

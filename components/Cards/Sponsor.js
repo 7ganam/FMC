@@ -21,7 +21,7 @@ function Sponsor(props) {
           <Typography style={{ fontWeight: "bold" }}>{title}</Typography>
           <Typography>{role}</Typography>
           <div className="mt-2">
-            <Button variant="contained" color="secondary" className={classes.button} href={website}>
+            <Button variant="contained" color="secondary" className={classes.button} href={website} target="_blank">
               website
             </Button>
           </div>

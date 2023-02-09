@@ -84,26 +84,26 @@ function Expertise() {
               </Typography>
               <Typography variant="h6">The benefits to students are numerous, among them:</Typography>
               <div className="flex gap-2 ml-3 mt-1">
-                <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
+                <AiFillCheckSquare className="w-6 h-6 text-blue-400 mt-2 min-w-6 min-h-6" />
                 <div className="text-2xl ml-3 mt-1">
                   Putting to practice what they learn in the classroom by designing and building a working product
                 </div>
               </div>
               <div className="flex gap-2 ml-3 mt-1">
-                <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
+                <AiFillCheckSquare className="w-6 h-6 text-blue-400 mt-2 min-w-6 min-h-6" />
                 <div className="text-2xl ml-3 mt-1">
                   Developing soft skills and learning about project management and team work so they are better prepared
                   for their careers
                 </div>
               </div>
               <div className="flex gap-2 ml-3 mt-1">
-                <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
+                <AiFillCheckSquare className="w-6 h-6 text-blue-400 mt-2 min-w-6 min-h-6" />
                 <div className="text-2xl ml-3 mt-1">
                   Understanding energy efficiency which they can translate to any project they work on in the future
                 </div>
               </div>
               <div className="flex gap-2 ml-3 mt-1">
-                <AiFillCheckSquare className="w-6 h-6 text-blue-400" />
+                <AiFillCheckSquare className="w-6 h-6 text-blue-400 mt-2 min-w-6 min-h-6" />
                 <div className="text-2xl ml-3 mt-1">
                   Representing their countries at the highest level against the best students and minds on the planet
                 </div>

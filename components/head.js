@@ -1,16 +1,13 @@
-import React from 'react';
-import { Head } from 'next/document';
-import theme from '../theme/palette';
-import brand from '../public/text/brand';
+import React from "react";
+import { Head } from "next/document";
+import theme from "../theme/palette";
+import brand from "../public/text/brand";
 
 const HeadComponent = () => (
   <Head>
     <meta charSet="utf-8" />
     {/* Use minimum-scale=1 to enable GPU rasterization */}
-    <meta
-      name="description"
-      content={brand.medical.desc}
-    />
+    <meta name="description" content={brand.medical.desc} />
     {/* Favicon */}
     <link rel="icon" href="/favicons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
@@ -47,10 +44,7 @@ const HeadComponent = () => (
     <meta property="twitter:image:src" content="/images/medical-logo.png" />
     <meta property="og:url" content={brand.medical.url} />
     <meta property="og:title" content={brand.medical.desc} />
-    <meta
-      property="og:description"
-      content={brand.medical.desc}
-    />
+    <meta property="og:description" content={brand.medical.desc} />
     <meta name="twitter:site" content={brand.medical.url} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={brand.medical.img} />

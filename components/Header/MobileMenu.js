@@ -19,24 +19,34 @@ function MobileMenu(props) {
     <div className={classes.mobileNav} role="presentation" onClick={toggleDrawer} onKeyDown={toggleDrawer}>
       <div className={clsx(classes.menu, open && classes.menuOpen)}>
         <List component="nav">
-          {navMenu.map((item, index) => (
-            <ListItem
-              button
-              component="a"
-              href={`#${item}`}
-              key={index.toString()}
-              style={{ animationDuration: index * 0.15 + "s" }}
-            >
-              <ListItemText primary={t("medical-landing.header_" + item)} className={classes.menuList} />
-            </ListItem>
-          ))}
+          <ListItem button component="a" href="#about" key="about" style={{ animationDuration: 1 * 0.15 + "s" }}>
+            <ListItemText primary="about" className={classes.menuList} />
+          </ListItem>
+          <ListItem button component="a" href="#EVGP" key="EVGP" style={{ animationDuration: 1 * 0.15 + "s" }}>
+            <ListItemText primary="EVGP" className={classes.menuList} />
+          </ListItem>
+          <ListItem button component="a" href="#GEVC" key="GEVC" style={{ animationDuration: 1 * 0.15 + "s" }}>
+            <ListItemText primary="GEVC" className={classes.menuList} />
+          </ListItem>
+          <ListItem
+            button
+            component="a"
+            href="#officials"
+            key="officials"
+            style={{ animationDuration: 1 * 0.15 + "s" }}
+          >
+            <ListItemText primary="officials" className={classes.menuList} />
+          </ListItem>
+          <ListItem button component="a" href="#partners" key="partners" style={{ animationDuration: 1 * 0.15 + "s" }}>
+            <ListItemText primary="partners" className={classes.menuList} />
+          </ListItem>
           <ListItem
             button
             component="a"
             href={routeLink.medical.contact}
             style={{ animationDuration: navMenu.length * 0.15 + "s" }}
           >
-            <ListItemText primary={t("medical-landing.header_contact")} className={classes.menuList} />
+            <ListItemText primary="contact us" className={classes.menuList} />
           </ListItem>
         </List>
       </div>
