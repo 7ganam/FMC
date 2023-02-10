@@ -163,7 +163,7 @@ function Header(props) {
                     )}
                   </li>
                   <li>
-                    <Button href="contact">Contact Us</Button>
+                    <Button href="/contact.html">Contact Us</Button>
                   </li>
                 </Scrollspy>
               )}

@@ -44,7 +44,7 @@ function CallAction() {
                   size="large"
                   variant="contained"
                   color="primary"
-                  href={link.medical.contact}
+                  href="/contact.html"
                   className={classes.button}
                 >
                   CONTACT US!

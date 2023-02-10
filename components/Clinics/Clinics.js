@@ -54,7 +54,7 @@ function MapAdress() {
           <Grid item lg={5} md={6} xs={12}>
             <Box mt={5}>
               <Typography variant="h4" className={text.primary}>
-                Venue and Location
+                Venue <span className="lowercase">and</span> Location
               </Typography>
             </Box>
             <div className="text-xl">

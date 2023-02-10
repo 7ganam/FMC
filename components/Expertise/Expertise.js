@@ -79,7 +79,7 @@ function Expertise() {
           </Grid>
           <Grid item lg={6} md={7} xs={12}>
             <div className="md:mt-[-100px]">
-              <Typography className={clsx(title.default, text.subtitle)} variant="h4">
+              <Typography style={{ padding: "0px" }} className={clsx(title.default, text.subtitle)} variant="h4">
                 Benefits to the students
               </Typography>
               <Typography variant="h6">The benefits to students are numerous, among them:</Typography>

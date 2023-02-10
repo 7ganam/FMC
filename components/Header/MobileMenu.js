@@ -43,7 +43,7 @@ function MobileMenu(props) {
           <ListItem
             button
             component="a"
-            href={routeLink.medical.contact}
+            href="/contact.html"
             style={{ animationDuration: navMenu.length * 0.15 + "s" }}
           >
             <ListItemText primary="contact us" className={classes.menuList} />
