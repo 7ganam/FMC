@@ -73,7 +73,7 @@ const doctorsData = [
 ];
 
 const sponsorsData = [
-  { logo: s5, title: "Global EEE", website: "https://www.ieee.org/", role: "Technical Organizer" },
+  { logo: s5, title: "Global EEE", website: "https://globaleee.org/", role: "Technical Organizer" },
   { logo: s1, title: "ADU", website: "https://www.adu.ac.ae", role: "Academic Partner" },
   { logo: s8, title: "3elm", website: "https://3elmeducation.com/ ", role: "Education Partner" },
   { logo: s10, title: "ProjoTech", website: "https://projotech.com/", role: "EdTech Partner" },
@@ -81,7 +81,7 @@ const sponsorsData = [
   { logo: s4, title: "EVIS", website: "https://www.evinnovationsummit.com/ ", role: "Knowledge Partner" },
   { logo: s7, title: "Mathworks", website: "https://www.mathworks.com/", role: "Software Partner" },
   { logo: s3, title: "ASME", website: "https://www.asme.org/", role: "Professional Association" },
-  { logo: s6, title: "IEEE", website: "https://globaleee.org/", role: "Professional Association" },
+  { logo: s6, title: "IEEE", website: "https://www.ieee.org/", role: "Professional Association" },
 ];
 
 function Sponsors() {

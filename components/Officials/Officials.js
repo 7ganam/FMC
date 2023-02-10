@@ -70,7 +70,9 @@ function Officials(props) {
           <Grid item lg={4} md={2} xs={12} className={classes2.item2}>
             <div className="my-4 mx-4">
               {" "}
-              <Typography variant="h4">Officials and Technical Experts</Typography>
+              <Typography variant="h4">
+                Officials and <div>Technical Experts</div>
+              </Typography>
             </div>
             <div
               style={{ boxShadow: "-6px 5px 12px 13px rgb(0 0 0 / 6%)" }}
