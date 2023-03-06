@@ -25,6 +25,7 @@ import s7 from "~/public/images/sponsors/Mathworks logo.png";
 import s8 from "~/public/images/sponsors/3elemLogo.png";
 import s9 from "~/public/images/sponsors/Al Nabooda logo.png";
 import s10 from "~/public/images/sponsors/projotecLogo.png";
+import s11 from "~/public/images/sponsors/usm-uae-seal.png";
 const categories = ["all", "Orthopedic", "Nutritionist", "Pediatric", "Anaesthestic"];
 
 const doctorsData = [
@@ -76,9 +77,10 @@ const sponsorsData = [
   { logo: s5, title: "Global EEE", website: "https://globaleee.org/", role: "Technical Organizer" },
   { logo: s1, title: "ADU", website: "https://www.adu.ac.ae", role: "Academic Partner" },
   { logo: s8, title: "3elm", website: "https://3elmeducation.com/ ", role: "Education Partner" },
+  { logo: s11, title: "US Embassy", website: "https://ae.usembassy.gov/", role: "AbuDhabi,UAE" },
   { logo: s10, title: "ProjoTech", website: "https://projotech.com/", role: "EdTech Partner" },
   { logo: s9, title: "Al Nabooda", website: "https://nabooda-auto.com/", role: "Automotive Partner" },
-  { logo: s4, title: "EVIS", website: "https://www.evinnovationsummit.com/ ", role: "Knowledge Partner" },
+  { logo: s4, title: "EVIS", website: "https://www.evinnovationsummit.com/ ", role: "Awareness Partner" },
   { logo: s7, title: "Mathworks", website: "https://www.mathworks.com/", role: "Software Partner" },
   { logo: s3, title: "ASME", website: "https://www.asme.org/", role: "Professional Association" },
   { logo: s6, title: "IEEE", website: "https://www.ieee.org/", role: "Professional Association" },
@@ -118,11 +120,12 @@ function Sponsors() {
               </div>
             </ScrollAnimation>
           </Grid>
-          <Grid item lg={8} md={10} xs={12}>
+          <Grid item md={10} sm={3} xs={12}></Grid>
+          <Grid item lg={12} md={12} xs={12}>
             <div className={classes.massonry}>
               <Grid container spacing={isDesktop ? 6 : 4}>
                 {sponsorsData.map((item, index) => (
-                  <Grid item sm={4} xs={12} key={index.toString()}>
+                  <Grid item sm={3} xs={12} key={index.toString()}>
                     <ScrollAnimation
                       animateOnce
                       animateIn="fadeInUpShort"
