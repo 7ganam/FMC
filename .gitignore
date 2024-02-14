@@ -22,3 +22,5 @@ yarn-error.log*
 /packages/**/out
 /packages/**/dist
 
+# Build
+dist
