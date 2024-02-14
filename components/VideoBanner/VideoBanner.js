@@ -11,14 +11,12 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
-import { useTranslation } from "next-i18next";
 import { useText } from "~/theme/common";
 import yt from "~/youtube";
 import useStyles from "./banner-style";
 import DotsParallax from "../Parallax/Dots";
 
 import logo1 from "~/public/images/attachment 1.png";
-import logo2 from "~/public/images/attachment 2.png";
 
 function VideoBanner() {
   // Theme breakpoints
@@ -27,9 +25,6 @@ function VideoBanner() {
   const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
   const isTablet = useMediaQuery(theme.breakpoints.up("sm"));
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
-  // Translation function
-  const { t } = useTranslation("common");
 
   // Youtube player
   const [play, setPlayed] = useState(false);
@@ -104,23 +99,17 @@ function VideoBanner() {
           <Grid item md={6} xs={12}>
             <div className={classes.bannerText}>
               <div variant="h5" className="mt-[150px] mb-1 font-extrabold text-2xl">
-                Abu Dhabi University
+                Global Education Energy Environment (Global EEE)
               </div>
               <div>
-                <Typography variant="h3">Future Mobility Challenge</Typography>
+                <Typography variant="h4">UAE Electric Vehicle Grand Prix</Typography>
               </div>
               <Typography className={clsx(classes.subtitle, text.subtitle2)} variant="h5">
-                Held for the first time in the UAE on March 18, 2023
+                Coming again on UAE on March 2, 2024
               </Typography>
-              <div
-                className="flex gap-5
-"
-              >
-                <Paper style={{ width: "200px", padding: "10px" }} className="flex items-center">
+              <div className="flex gap-5">
+                <Paper style={{ width: "200px", padding: "10px" }} className="flex items-center ">
                   <img src={logo1} alt="logo" style={{ width: "100%" }} />
-                </Paper>
-                <Paper style={{ width: "200px", padding: "10px" }}>
-                  <img src={logo2} alt="logo" style={{ width: "100%" }} />
                 </Paper>
               </div>
             </div>
@@ -146,7 +135,7 @@ function VideoBanner() {
                       <div className={classes.video}>
                         <Hidden mdDown>
                           <YouTube
-                            videoId="_4NaRiqO500"
+                            videoId="7AKcCCSRJ5s"
                             opts={opts}
                             onReady={_onReady}
                             onEnd={_onEnd}
