@@ -91,15 +91,15 @@ function Header(props) {
               <div className={classes.logo}>
                 {invert ? (
                   <Link href={routeLink.medical.home}>
-                    <a>
+                    <a className="text-[13px]">
                       <img src={logo} alt="logo" />
-                      Future Mobility Challenge
+                      UAE Electric Vehicle Grand Prix
                     </a>
                   </Link>
                 ) : (
                   <AnchorLink href="#home">
                     <img src={logo} alt="logo" />
-                    Future Mobility Challenge
+                    UAE Electric Vehicle Grand Prix
                   </AnchorLink>
                 )}
               </div>
@@ -125,7 +125,7 @@ function Header(props) {
                     ) : (
                       // eslint-disable-next-line
                       <Button component={AnchorLink} offset={150} href="#EVGP">
-                        EVGP
+                        The Cars
                       </Button>
                     )}
                   </li>
@@ -136,7 +136,7 @@ function Header(props) {
                     ) : (
                       // eslint-disable-next-line
                       <Button component={AnchorLink} offset={150} href="#GEVC">
-                        GEVC
+                        Teams
                       </Button>
                     )}
                   </li>
