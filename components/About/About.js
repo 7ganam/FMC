@@ -34,17 +34,39 @@ function About() {
         <Grid container spacing={isDesktop ? 6 : 2}>
           <Grid item md={5} xs={12}>
             <div className={align.textCenter}>
-              <TitleDeco bg={race} text="About Us" />
+              <TitleDeco bg={race} text="About" />
             </div>
           </Grid>
           <Grid item md={7} xs={12}>
-            <Typography className={clsx(title.default, text.subtitle)} variant="h4">
-              The ADU Future Mobility Challenge (FMC) consists of the Electric Vehicle Grand Prix (EVGP) for high
-              schools and the Global Electric Vehicle Challenge (GEVC) for universities in which students design, build,
-              test and race single person electric cars.
+            <Typography variant="h6">
+              The Electric Vehicle Grand Prix® (EVGP) is a hands-on educational program for high school students between
+              the ages of 15 to 19. Student teams apply math, science, and engineering to construct and race full-size
+              electric cars. The primary goals of the competition are to generate enthusiasm for science and engineering
+              at a crucial stage in the educational development of young people, improve their understanding of
+              scientific concepts and renewable energy technologies, and encourage them to consider technical careers at
+              an early age. It also emphasizes critical thinking, leadership, team work, and project management, while
+              educating a new generation of drivers about electric vehicles, hence promoting clean transportation
+              options. This competition are gaining popularity among high schools in the US and other parts of the world
+              as an exciting new environmentally progressive sport. The electric vehicles are single person,
+              lightweight, aerodynamic, high efficiency, electric-motor-driven vehicles with three wheels. They must
+              meet specific design and safety rules. They are powered by deep cycle sealed lead acid battery packs not
+              exceeding 33 kg (73 pounds). The race is held on a purposebuilt closed track with a minimum length of 0.5
+              km. Speeds are software limited through the controller to ensure utmost safety. Teams drive their
+              electrically powered vehicles as far as possible for one hour on the closed loop course using only energy
+              stored in their batteries. The winner of the EVGP is the team that covers the longest distance in the
+              allotted hour. Other awards include Technical Innovation, 3D Printing, among others.
             </Typography>
+            <div className="flex flex-row justify-center">
+              <a
+                target="_blank"
+                href="/awards.pdf"
+                className="text-2xl font-extrabold hover:underline hover:text-[#357A38]"
+              >
+                Read More
+              </a>
+            </div>
             <Counter />
-            <blockquote>Held for the first time in the UAE</blockquote>
+            <blockquote>Held for the second time in the UAE</blockquote>
           </Grid>
         </Grid>
       </Container>
