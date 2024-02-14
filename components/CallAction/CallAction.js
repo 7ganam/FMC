@@ -7,16 +7,12 @@ import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { useTranslation } from "next-i18next";
-import link from "~/public/text/link";
 import useStyles from "./action-style";
 
 function CallAction() {
   // Theme breakpoints
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
-
-  // Translation Function
-  const { t } = useTranslation("common");
 
   const classes = useStyles();
   return (
@@ -39,7 +35,8 @@ function CallAction() {
               </Typography>
             </Grid>
             <Grid item lg={4} md={5} xs={12}>
-              <Grid container justifyContent="flex-end">
+              <div className="flex flex-col items-end justify-start gap-5">
+                <img src="/images/sponsors/Global EEE logo.png" alt="Global EEE Logo" />
                 <Button
                   size="large"
                   variant="contained"
@@ -49,7 +46,7 @@ function CallAction() {
                 >
                   CONTACT US!
                 </Button>
-              </Grid>
+              </div>
             </Grid>
           </Grid>
         </Paper>
