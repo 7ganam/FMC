@@ -22,16 +22,16 @@ function Details() {
             className=" lg:ml-[20vw] w-[800px] min-h-[400px] max-w-[90%] m-auto md:my-[170px] relative my-[200px]"
           >
             <div className="w-[400px] h-[300px] absolute bg-slate-600 top-[-150px] left-[50px] z-50 rounded-r-full rounded-b-full overflow-hidden">
-              <img src={event} alt="cover" className="w-full h-full object-fill" />
+              <img src={event} alt="cover" className="object-fill w-full h-full" />
             </div>
             <div className="h-[140px]" />
-            <div className="text-xl md:text-2xl p-6 mt-3">
-              The FMC is open to the public, and provides a wonderful opportunity for children of all ages and adults to
-              spend a Saturday afternoon cheering for the teams, learning about electric vehicles and marveling at the
-              ingenuity and hard work of the students. In the morning our international technical experts will conduct
-              car safety inspections and driver weigh-in, and the teams will have a chance to do their final testing and
-              practice on the track. Teams will line up for the group photo at 1:15 PM followed by the official race
-              consisting of several heats for both challenges.
+            <div className="p-6 mt-3 text-xl text-justify md:text-2xl">
+              The UAE EVGP is open to the public, and provides a wonderful opportunity for children of all ages and
+              adults to spend a Saturday afternoon cheering for the teams, learning about electric vehicles, and
+              marveling at the ingenuity and hard work of the students. In the morning our international technical
+              experts will conduct final car safety inspections and driver weigh-in, and the teams will have a chance to
+              conduct their qualifying laps on the track. Teams will line up for the group photo at 12:30 PM followed by
+              the official race consisting of several four 30-minute heats.
             </div>
           </Paper>
         </div>
