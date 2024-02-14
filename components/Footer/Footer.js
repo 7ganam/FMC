@@ -67,13 +67,13 @@ function Footer(props) {
           <Box mr={-2} mt={-2}>
             <div className={classes.logo}>
               <img src={logo} alt="logo" />
-              <Typography variant="h6" color="textPrimary">
-                {brand.medical.projectName}
+              <Typography variant="subtitle1" color="textPrimary">
+                UAE Electric Vehicle Grand Prix
               </Typography>
             </div>
             <div color="textPrimary" className={classes.footerDesc} gutterBottom>
-              Held for the first time in UAE
-              <div>Saturday 18 March, 2023</div>
+              Held for the second time in UAE
+              <div>Saturday 2 March, 2024</div>
             </div>
             {isDesktop && <Copyright />}
           </Box>
