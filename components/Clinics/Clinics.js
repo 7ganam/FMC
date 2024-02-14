@@ -58,18 +58,18 @@ function MapAdress() {
               </Typography>
             </Box>
             <div className="text-xl">
-              <div className="flex gap-2 ml-3 mt-1">
+              <div className="flex gap-2 mt-1 ml-3">
                 <AiFillCheckSquare className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] text-blue-400" />
                 <div className="ml-3 text-xl">
-                  The ADU Future Mobility Challenge will be held at Al Hudayriyat Island in Abu Dhabi, UAE on a 3 km
-                  world class track.
+                  The UAE Electric Vehicle Grand Prix will be held at Al Forsan International Kart Circuit in Abu Dhabi,
+                  UAE on a 1.5 km world class track.
                 </div>
               </div>
-              <div className="flex gap-2 ml-3 mt-4">
+              <div className="flex gap-2 mt-4 ml-3">
                 <AiFillCheckSquare className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] text-blue-400" />
                 <div className="ml-3 text-2l">
-                  Guests will have the opportunity to visit the team garages and get an up close look at the cars to
-                  learn about the participating schools and university teams, as well as our partners and sponsors.
+                  Guests will have the opportunity to visit the team garages and get an up-close look at the cars to
+                  learn about the participating teams as well as our partners and sponsors.
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ function MapAdress() {
           <Grid item md={6} xs={12}>
             <Paper className={classes.map} elevation={10}>
               <MapWithAMarker
-                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+                googleMapURL="https://maps.app.goo.gl/jBwoF4sVfeDpkRhz5"
                 loadingElement={<div style={{ height: "100%" }} />}
                 containerElement={<div style={{ height: "500px" }} />}
                 mapElement={<div style={{ height: "100%" }} />}
