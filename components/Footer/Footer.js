@@ -71,7 +71,7 @@ function Footer(props) {
                 UAE Electric Vehicle Grand Prix
               </Typography>
             </div>
-            <div color="textPrimary" className={classes.footerDesc} gutterBottom>
+            <div color="textPrimary" className={classes.footerDesc} gutterbottom="true">
               Held for the second time in UAE
               <div>Saturday 2 March, 2024</div>
             </div>

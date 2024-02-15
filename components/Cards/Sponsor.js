@@ -12,14 +12,14 @@ function Sponsor(props) {
     <Paper className={classes.profile}>
       <div className={classes.personBlock}>
         <div className="w-full h-[200px] p-5">
-          <img src={logo} alt={title} className="w-full h-full object-contain" />
+          <img src={logo} alt={title} className="object-contain w-full h-full" />
         </div>
       </div>
       <hr className={classes.divider} />
       <div className={classes.action}>
-        <div className="flex flex-col justify-center items-center  w-full">
-          <Typography style={{ fontWeight: "bold" }}>{title}</Typography>
-          <Typography>{role}</Typography>
+        <div className="flex flex-col items-center justify-center w-full">
+          {title && <Typography style={{ fontWeight: "bold" }}>{title}</Typography>}
+          {role && <Typography>{role}</Typography>}
           <div className="mt-2">
             <Button variant="contained" color="secondary" className={classes.button} href={website} target="_blank">
               website
@@ -32,11 +32,11 @@ function Sponsor(props) {
 }
 
 Sponsor.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
-  exp: PropTypes.number.isRequired,
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  title: PropTypes.string,
+  rating: PropTypes.number,
+  exp: PropTypes.number,
 };
 
 export default Sponsor;

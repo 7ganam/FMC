@@ -62,7 +62,14 @@ function Sponsors() {
           <Grid item lg={12} md={12} xs={12}>
             <div className="container grid grid-cols-2 gap-5 mx-auto md:grid-cols-5">
               {partnersData.map((item, index) => (
-                <ScrollAnimation animateOnce animateIn="fadeInUpShort" offset={-100} delay={index * 200} duration={0.4}>
+                <ScrollAnimation
+                  key={item.title}
+                  animateOnce
+                  animateIn="fadeInUpShort"
+                  offset={-100}
+                  delay={index * 200}
+                  duration={0.4}
+                >
                   <div>{renderCard(item, index)}</div>
                 </ScrollAnimation>
               ))}
@@ -83,7 +90,14 @@ function Sponsors() {
           <Grid item lg={12} md={12} xs={12}>
             <div className="container grid grid-cols-2 gap-5 mx-auto md:grid-cols-5">
               {sponsorsData.map((item, index) => (
-                <ScrollAnimation animateOnce animateIn="fadeInUpShort" offset={-100} delay={index * 200} duration={0.4}>
+                <ScrollAnimation
+                  key={`item-${index}`}
+                  animateOnce
+                  animateIn="fadeInUpShort"
+                  offset={-100}
+                  delay={index * 200}
+                  duration={0.4}
+                >
                   <div>{renderCard(item, index)}</div>
                 </ScrollAnimation>
               ))}
