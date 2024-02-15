@@ -30,7 +30,7 @@ const schools = [
   { id: 18, team: "International School of Choueifat - DIP", location: "Dubai, UAE" },
   { id: 19, team: "International School of Choueifat - Dubai", location: "Dubai, UAE" },
   { id: 20, team: "International School of Choueifat - Ras Al Khaimah", location: "Ras Al Khaimah, UAE" },
-  { id: 21, team: "SABIS International School Ruwais", location: "Abu Dhabi, UAE" },
+  { id: 21, team: "SABIS International School", location: "Ruwais, Abu Dhabi, UAE" },
   { id: 22, team: "Volkswagen Applied Technology School", location: "Cairo, Egypt" },
   { id: 23, team: 'Istituto di Istruzione Superiore "Luigi di Savoia"', location: "Chieti, Italy" },
   { id: 24, team: "Prince George’s Clippers", location: "Maryland, USA" },
