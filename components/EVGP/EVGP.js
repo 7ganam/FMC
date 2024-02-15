@@ -1,15 +1,12 @@
 import React from "react";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { Paper } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import { Paper } from "@material-ui/core";
-import Button from "@material-ui/core/Button";
+import { Grid, withStyles } from "@material-ui/core";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-import { AppBar, Grid, withStyles } from "@material-ui/core";
 import useStyles from "./EVGP-style";
-
 import event from "~/public/images/EVGP photo.jpg";
-import logo1 from "~/public/images/attachment 1.png";
 
 const styles = (theme) => ({
   item1: {
@@ -71,12 +68,7 @@ function EVGP(props) {
                 start with the same amount of stored electrical energy. The teams race for two sessions (heats), each
                 half an hour in length. During each session, they must change drivers once around the 15 minute mark.
               </p>
-              <div className="w-[100%] h-[1px] bg-slate-300 my-4 m-auto" />
-              <a href="/About EVGP.pdf" target="_blank">
-                <Button size="large" variant="contained" color="primary" className="mt-2 ml-auto">
-                  More info
-                </Button>
-              </a>
+              {/* <div className="w-[100%] h-[1px] bg-slate-300 my-4 m-auto" /> */}
             </Paper>
           </Grid>
           <Grid item lg={4} md={2} xs={12} className={classes2.item2}>
@@ -87,7 +79,7 @@ function EVGP(props) {
               <img src={event} alt="cover" className="object-cover w-full h-full" />
             </div>
             <div className="flex items-center justify-center">
-              <img src="/EV-Schematic.png" className="-mt-28 h-[400px]" />
+              <img src="/EV-Schematic.png" className="h-[500px]" />
             </div>
           </Grid>
         </Grid>
