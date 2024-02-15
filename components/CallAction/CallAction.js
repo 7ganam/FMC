@@ -1,12 +1,12 @@
 import React from "react";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { useTheme } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import Container from "@material-ui/core/Container";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { useTranslation } from "next-i18next";
+import Paper from "@material-ui/core/Paper";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
+import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+
 import useStyles from "./action-style";
 
 function CallAction() {
@@ -19,7 +19,7 @@ function CallAction() {
     <Container fixed={isDesktop}>
       <div className={classes.root}>
         <Paper className={classes.paper}>
-          <Grid container alignItems="center">
+          <Grid container alignItems="flex-start">
             <Grid item lg={8} md={7} xs={12}>
               <Typography variant="h4" gutterBottom display="block">
                 About the organizers
@@ -35,8 +35,8 @@ function CallAction() {
               </Typography>
             </Grid>
             <Grid item lg={4} md={5} xs={12}>
-              <div className="flex flex-col items-end justify-start gap-5">
-                <img src="/images/sponsors/Global EEE logo.png" alt="Global EEE Logo" />
+              <div className="flex flex-col items-end justify-between gap-40">
+                <img className="object-cover h-40" src="/images/sponsors/Global EEE logo.png" alt="Global EEE Logo" />
                 <Button
                   size="large"
                   variant="contained"
