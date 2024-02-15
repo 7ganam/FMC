@@ -52,7 +52,7 @@ function About() {
             <div className="flex flex-row justify-center my-8">
               <a
                 target="_blank"
-                href="/awards.pdf"
+                href="/files/awards.pdf"
                 className="text-2xl font-extrabold hover:underline hover:text-[#357A38]"
               >
                 <Button size="large" variant="contained" color="primary" className="mt-2 ml-auto">
