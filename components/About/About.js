@@ -1,19 +1,16 @@
 import React from "react";
-import clsx from "clsx";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
+import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 import { useTheme } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
-import { useTranslation } from "next-i18next";
-import { useText, useTextAlign } from "~/theme/common";
-import imgAPI from "~/public/images/imgAPI";
-import TitleDeco from "../Title/WithDecoration";
-import useStyles from "./about-style";
-import useTitle from "../Title/title-style";
-import Counter from "../Counter";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
+import Counter from "../Counter";
+import useStyles from "./about-style";
 import race from "~/public/images/RACE-.jpg";
+import TitleDeco from "../Title/WithDecoration";
+import { useText, useTextAlign } from "~/theme/common";
 
 function About() {
   const text = useText();
@@ -23,11 +20,7 @@ function About() {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
-  // Translation function
-  const { t } = useTranslation("common");
-
   const classes = useStyles();
-  const title = useTitle();
   return (
     <div className={classes.root + " mt-[200px]"}>
       <Container fixed>
@@ -56,13 +49,15 @@ function About() {
               stored in their batteries. The winner of the EVGP is the team that covers the longest distance in the
               allotted hour. Other awards include Technical Innovation, 3D Printing, among others.
             </Typography>
-            <div className="flex flex-row justify-center">
+            <div className="flex flex-row justify-center my-8">
               <a
                 target="_blank"
                 href="/awards.pdf"
                 className="text-2xl font-extrabold hover:underline hover:text-[#357A38]"
               >
-                Read More
+                <Button size="large" variant="contained" color="primary" className="mt-2 ml-auto">
+                  Read More
+                </Button>
               </a>
             </div>
             <Counter />
