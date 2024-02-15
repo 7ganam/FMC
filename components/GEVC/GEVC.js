@@ -23,17 +23,17 @@ const schools = [
   { id: 11, team: "Vocational Education Development Centre - ADVETI", location: "Abu Dhabi, UAE" },
   { id: 12, team: "Al Rayaheen School", location: "Al Ain, Abu Dhabi, UAE" },
   { id: 13, team: "International School of Choueifat - Al Ain", location: "Al Ain, Abu Dhabi, UAE" },
-  { id: 14, team: "Volkswagen Applied Technology School", location: "Cairo, Egypt" },
-  { id: 15, team: 'Istituto di Istruzione Superiore "Luigi di Savoia"', location: "Chieti, Italy" },
-  { id: 16, team: "Al Ittihad Private School Jumeira", location: "Dubai, UAE" },
-  { id: 17, team: "Ambassador School Dubai", location: "Dubai, UAE" },
-  { id: 18, team: "Bloom World Academy", location: "Dubai, UAE" },
-  { id: 19, team: "GEMS Winchester School Dubai", location: "Dubai, UAE" },
-  { id: 20, team: "International School of Choueifat - DIP", location: "Dubai, UAE" },
-  { id: 21, team: "International School of Choueifat - Dubai", location: "Dubai, UAE" },
-  { id: 22, team: "Oxon Hill EV Racers", location: "Maryland, USA" },
-  { id: 23, team: "International School of Choueifat - Ras Al Khaimah", location: "Ras Al Khaimah, UAE" },
-  { id: 24, team: "SABIS International School Ruwais", location: "Abu Dhabi, UAE" },
+  { id: 14, team: "Al Ittihad Private School Jumeira", location: "Dubai, UAE" },
+  { id: 15, team: "Ambassador School Dubai", location: "Dubai, UAE" },
+  { id: 16, team: "Bloom World Academy", location: "Dubai, UAE" },
+  { id: 17, team: "GEMS Winchester School Dubai", location: "Dubai, UAE" },
+  { id: 18, team: "International School of Choueifat - DIP", location: "Dubai, UAE" },
+  { id: 19, team: "International School of Choueifat - Dubai", location: "Dubai, UAE" },
+  { id: 20, team: "International School of Choueifat - Ras Al Khaimah", location: "Ras Al Khaimah, UAE" },
+  { id: 21, team: "SABIS International School Ruwais", location: "Abu Dhabi, UAE" },
+  { id: 22, team: "Volkswagen Applied Technology School", location: "Cairo, Egypt" },
+  { id: 23, team: 'Istituto di Istruzione Superiore "Luigi di Savoia"', location: "Chieti, Italy" },
+  { id: 24, team: "Prince George’s Clippers", location: "Maryland, USA" },
   { id: 25, team: "Harrisonburg High School", location: "Virginia, USA" },
   { id: 26, team: "Shenandoah Valley Short Circuits", location: "Virginia, USA" },
   { id: 27, team: "Jackson-Reed High School", location: "Washington DC, USA" },
@@ -78,18 +78,6 @@ function GEVC() {
                   ))}
                 </tbody>
               </table>
-              <div className="w-[100%] h-[1px] bg-slate-300 my-4 m-auto" />
-              <Button
-                size="large"
-                variant="contained"
-                color="primary"
-                href={"https://gevc.globaleee.org/"}
-                target="_blank"
-                // className={classes.button}
-                className="mt-2 ml-auto"
-              >
-                More info
-              </Button>
             </Paper>
           </Grid>
         </Grid>
