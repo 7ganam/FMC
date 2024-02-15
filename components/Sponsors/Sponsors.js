@@ -20,17 +20,26 @@ import s9 from "~/public/images/sponsors/Al Nabooda logo.png";
 import s10 from "~/public/images/sponsors/projotecLogo.png";
 import s11 from "~/public/images/sponsors/usm-uae-seal.png";
 
-const sponsorsData = [
+const partnersData = [
   { logo: s5, title: "Global EEE", website: "https://globaleee.org/", role: "Technical Organizer" },
-  { logo: s1, title: "NYU ADU", website: "https://nyuad.nyu.edu/en/", role: "Academic Partner" },
+  { logo: s1, title: "NYUAD", website: "https://nyuad.nyu.edu/en/", role: "Academic Partner" },
   { logo: s8, title: "3elm", website: "https://3elmeducation.com/ ", role: "Education Partner" },
   { logo: s11, title: "US Embassy", website: "https://ae.usembassy.gov/", role: "AbuDhabi,UAE" },
-  { logo: s10, title: "ProjoTech", website: "https://projotech.com/", role: "EdTech Partner" },
+  { logo: s10, title: "ProjoTech", website: "https://projotech.com/", role: "Technology Partner" },
   { logo: s9, title: "Al Nabooda", website: "https://nabooda-auto.com/", role: "Automotive Partner" },
   { logo: s4, title: "EVIS", website: "https://www.evinnovationsummit.com/ ", role: "Awareness Partner" },
   { logo: s7, title: "Mathworks", website: "https://www.mathworks.com/", role: "Software Partner" },
   { logo: s3, title: "ASME", website: "https://www.asme.org/", role: "Professional Association" },
   { logo: s6, title: "IEEE", website: "https://www.ieee.org/", role: "Professional Association" },
+];
+
+const sponsorsData = [
+  { logo: "/images/sponsors/pepsico.jpg", website: "https://www.pepsico.com/" },
+  { logo: "/images/sponsors/alforsan.jpg", website: "https://alforsan.com/" },
+  {
+    logo: "/images/sponsors/marriott.jpg",
+    website: "https://www.marriott.com/en-us/hotels/auhal-marriott-hotel-al-forsan-abu-dhabi/overview/ ",
+  },
 ];
 
 function Sponsors() {
@@ -54,7 +63,38 @@ function Sponsors() {
             <ScrollAnimation animateOnce animateIn="fadeInLeftShort" offset={-100} delay={200} duration={0.3}>
               <div className={classes.sideFilter}>
                 <Typography variant="h4" className={`${title.primary} whitespace-nowrap`}>
-                  Partners and Sponsors
+                  Partners
+                </Typography>
+              </div>
+            </ScrollAnimation>
+          </Grid>
+          <Grid item md={10} sm={3} xs={12}></Grid>
+          <Grid item lg={12} md={12} xs={12}>
+            <div className={classes.massonry}>
+              <Grid container spacing={isDesktop ? 6 : 4}>
+                {partnersData.map((item, index) => (
+                  <Grid item sm={3} xs={12} key={index.toString()}>
+                    <ScrollAnimation
+                      animateOnce
+                      animateIn="fadeInUpShort"
+                      offset={-100}
+                      delay={index * 200}
+                      duration={0.4}
+                    >
+                      <div>{renderCard(item, index)}</div>
+                    </ScrollAnimation>
+                  </Grid>
+                ))}
+              </Grid>
+            </div>
+          </Grid>
+        </Grid>
+        <Grid container spacing={isDesktop ? 3 : 0} justifyContent="center">
+          <Grid item md={2} sm={9} xs={12}>
+            <ScrollAnimation animateOnce animateIn="fadeInLeftShort" offset={-100} delay={200} duration={0.3}>
+              <div className={classes.sideFilter}>
+                <Typography variant="h4" className={`${title.primary} whitespace-nowrap`}>
+                  Sponsors
                 </Typography>
               </div>
             </ScrollAnimation>
