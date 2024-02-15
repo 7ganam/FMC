@@ -10,31 +10,21 @@ import useTitle from "../Title/title-style";
 import useStyles from "./sponsor-style";
 
 import s1 from "~/public/images/sponsors/NYUAbuDhabiLogo.png";
-import s3 from "~/public/images/sponsors/ASME logo.png";
-import s4 from "~/public/images/sponsors/EVIS logo.jpg";
 import s5 from "~/public/images/sponsors/Global EEE logo.png";
-import s6 from "~/public/images/sponsors/IEEE logo.png";
-import s7 from "~/public/images/sponsors/Mathworks logo.png";
 import s8 from "~/public/images/sponsors/3elemLogo.png";
-import s9 from "~/public/images/sponsors/Al Nabooda logo.png";
 import s10 from "~/public/images/sponsors/projotecLogo.png";
 import s11 from "~/public/images/sponsors/usm-uae-seal.png";
 
 const partnersData = [
   { logo: s5, title: "Global EEE", website: "https://globaleee.org/", role: "Technical Organizer" },
-  { logo: s1, title: "NYUAD", website: "https://nyuad.nyu.edu/en/", role: "Academic Partner" },
   { logo: s8, title: "3elm", website: "https://3elmeducation.com/ ", role: "Education Partner" },
-  { logo: s11, title: "US Embassy", website: "https://ae.usembassy.gov/", role: "AbuDhabi,UAE" },
+  { logo: s11, title: "US Mission", website: "https://ae.usembassy.gov/", role: "Abu Dhabi, UAE" },
   { logo: s10, title: "ProjoTech", website: "https://projotech.com/", role: "Technology Partner" },
-  { logo: s9, title: "Al Nabooda", website: "https://nabooda-auto.com/", role: "Automotive Partner" },
-  { logo: s4, title: "EVIS", website: "https://www.evinnovationsummit.com/ ", role: "Awareness Partner" },
-  { logo: s7, title: "Mathworks", website: "https://www.mathworks.com/", role: "Software Partner" },
-  { logo: s3, title: "ASME", website: "https://www.asme.org/", role: "Professional Association" },
-  { logo: s6, title: "IEEE", website: "https://www.ieee.org/", role: "Professional Association" },
+  { logo: s1, title: "NYUAD", website: "https://nyuad.nyu.edu/en/", role: "Academic Partner" },
 ];
 
 const sponsorsData = [
-  { logo: "/images/sponsors/pepsico.jpg", website: "https://www.pepsico.com/" },
+  { logo: "/images/sponsors/pepsico.png", website: "https://www.pepsico.com/" },
   { logo: "/images/sponsors/alforsan.jpg", website: "https://alforsan.com/" },
   {
     logo: "/images/sponsors/marriott.jpg",
@@ -70,22 +60,12 @@ function Sponsors() {
           </Grid>
           <Grid item md={10} sm={3} xs={12}></Grid>
           <Grid item lg={12} md={12} xs={12}>
-            <div className={classes.massonry}>
-              <Grid container spacing={isDesktop ? 6 : 4}>
-                {partnersData.map((item, index) => (
-                  <Grid item sm={3} xs={12} key={index.toString()}>
-                    <ScrollAnimation
-                      animateOnce
-                      animateIn="fadeInUpShort"
-                      offset={-100}
-                      delay={index * 200}
-                      duration={0.4}
-                    >
-                      <div>{renderCard(item, index)}</div>
-                    </ScrollAnimation>
-                  </Grid>
-                ))}
-              </Grid>
+            <div className="container grid grid-cols-2 gap-5 mx-auto md:grid-cols-5">
+              {partnersData.map((item, index) => (
+                <ScrollAnimation animateOnce animateIn="fadeInUpShort" offset={-100} delay={index * 200} duration={0.4}>
+                  <div>{renderCard(item, index)}</div>
+                </ScrollAnimation>
+              ))}
             </div>
           </Grid>
         </Grid>
@@ -101,22 +81,12 @@ function Sponsors() {
           </Grid>
           <Grid item md={10} sm={3} xs={12}></Grid>
           <Grid item lg={12} md={12} xs={12}>
-            <div className={classes.massonry}>
-              <Grid container spacing={isDesktop ? 6 : 4}>
-                {sponsorsData.map((item, index) => (
-                  <Grid item sm={3} xs={12} key={index.toString()}>
-                    <ScrollAnimation
-                      animateOnce
-                      animateIn="fadeInUpShort"
-                      offset={-100}
-                      delay={index * 200}
-                      duration={0.4}
-                    >
-                      <div>{renderCard(item, index)}</div>
-                    </ScrollAnimation>
-                  </Grid>
-                ))}
-              </Grid>
+            <div className="container grid grid-cols-2 gap-5 mx-auto md:grid-cols-5">
+              {sponsorsData.map((item, index) => (
+                <ScrollAnimation animateOnce animateIn="fadeInUpShort" offset={-100} delay={index * 200} duration={0.4}>
+                  <div>{renderCard(item, index)}</div>
+                </ScrollAnimation>
+              ))}
             </div>
           </Grid>
         </Grid>
