@@ -98,14 +98,12 @@ function VideoBanner() {
         <Grid container spacing={6}>
           <Grid item md={6} xs={12}>
             <div className={classes.bannerText}>
-              <div variant="h5" className="mt-[150px] mb-1 font-extrabold text-2xl">
-                Global Education Energy Environment (Global EEE)
-              </div>
+              <p className="mt-[150px] mb-1 font-extrabold text-lg">Global Education Energy Environment (Global EEE)</p>
               <div>
-                <Typography variant="h4">UAE Electric Vehicle Grand Prix</Typography>
+                <p className="text-4xl font-black">UAE Electric Vehicle Grand Prix</p>
               </div>
               <Typography className={clsx(classes.subtitle, text.subtitle2)} variant="h5">
-                Coming again on UAE on March 2, 2024
+                Coming again to UAE on March 2, 2024
               </Typography>
               <div className="flex gap-5">
                 <Paper style={{ width: "200px", padding: "10px" }} className="flex items-center ">
