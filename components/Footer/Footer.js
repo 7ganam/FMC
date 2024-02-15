@@ -134,17 +134,23 @@ function Footer(props) {
         </Grid>
         <Grid item xs={12} md={3}>
           <div className={classes.socmed}>
-            <IconButton aria-label="FB" className={classes.margin} size="small">
-              <i className="ion-logo-twitter" />
+            <IconButton aria-label="IG" className={classes.margin} size="small">
+              <a href="https://www.instagram.com/evgpglobal/" target="_blank">
+                <i className="ion-logo-instagram" />
+              </a>
             </IconButton>
             <IconButton aria-label="TW" className={classes.margin} size="small">
-              <i className="ion-logo-facebook" />
+              <a href="https://twitter.com/EVGPGlobal" target="_blank">
+                <i className="ion-logo-facebook" />
+              </a>
             </IconButton>
-            <IconButton aria-label="IG" className={classes.margin} size="small">
-              <i className="ion-logo-instagram" />
+            <IconButton aria-label="YT" className={classes.margin} size="small">
+              <i className="ion-logo-youtube" />
             </IconButton>
             <IconButton aria-label="LI" className={classes.margin} size="small">
-              <i className="ion-logo-linkedin" />
+              <a href="https://www.tiktok.com/@globalevgp?_t=8jsiHnPW6Lt&_r=1" target="_blank">
+                <img src="/logo-tiktok.svg" height={24} width={24} />
+              </a>
             </IconButton>
           </div>
           {/* <SelectLang toggleDir={toggleDir} /> */}
