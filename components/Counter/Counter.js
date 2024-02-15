@@ -19,7 +19,7 @@ function Counter() {
                 <Typography variant="h3">
                   2<sup>nd</sup>
                 </Typography>
-                <Typography component="p" style={{ fontSize: "18px" }}>
+                <Typography component="p" style={{ fontSize: "18px", textAlign: "center" }}>
                   Event
                 </Typography>
               </div>
@@ -29,7 +29,7 @@ function Counter() {
             <div className={clsx(classes.counterItem, classes.deco)}>
               <div className={classes.text}>
                 <Typography variant="h3">4</Typography>
-                <Typography component="p" style={{ fontSize: "18px" }}>
+                <Typography component="p" style={{ fontSize: "18px", textAlign: "center" }}>
                   Countries
                 </Typography>
               </div>
@@ -39,7 +39,7 @@ function Counter() {
             <div className={clsx(classes.counterItem, classes.deco)}>
               <div className={classes.text}>
                 <Typography variant="h3">28</Typography>
-                <Typography component="p" style={{ fontSize: "18px" }}>
+                <Typography component="p" style={{ fontSize: "18px", textAlign: "center" }}>
                   Teams
                 </Typography>
               </div>
