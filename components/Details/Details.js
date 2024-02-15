@@ -31,7 +31,7 @@ function Details() {
               marveling at the ingenuity and hard work of the students. In the morning our international technical
               experts will conduct final car safety inspections and driver weigh-in, and the teams will have a chance to
               conduct their qualifying laps on the track. Teams will line up for the group photo at 12:30 PM followed by
-              the official race consisting of several four 30-minute heats.
+              the official race consisting of four 30-minute heats.
             </div>
           </Paper>
         </div>
