@@ -16,9 +16,11 @@ function Counter() {
           <Grid sm={4} item>
             <div className={clsx(classes.counterItem, classes.deco)}>
               <div className={classes.text}>
-                <Typography variant="h3">3</Typography>
+                <Typography variant="h3">
+                  2<sup>nd</sup>
+                </Typography>
                 <Typography component="p" style={{ fontSize: "18px" }}>
-                  Emirates
+                  Event
                 </Typography>
               </div>
             </div>
