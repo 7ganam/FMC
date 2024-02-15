@@ -141,11 +141,13 @@ function Footer(props) {
             </IconButton>
             <IconButton aria-label="TW" className={classes.margin} size="small">
               <a href="https://twitter.com/EVGPGlobal" target="_blank">
-                <i className="ion-logo-facebook" />
+                <i className="ion-logo-twitter" />
               </a>
             </IconButton>
             <IconButton aria-label="YT" className={classes.margin} size="small">
-              <i className="ion-logo-youtube" />
+              <a href="https://www.youtube.com/@EVGPGlobal" target="_blank">
+                <i className="ion-logo-youtube" />
+              </a>
             </IconButton>
             <IconButton aria-label="LI" className={classes.margin} size="small">
               <a href="https://www.tiktok.com/@globalevgp?_t=8jsiHnPW6Lt&_r=1" target="_blank">
