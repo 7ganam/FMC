@@ -22,7 +22,7 @@ function CallAction() {
           <Grid container alignItems="flex-start">
             <Grid item lg={8} md={7} xs={12}>
               <Typography variant="h4" gutterBottom display="block">
-                About the organizers
+                About Us
               </Typography>
               <Typography display="block">
                 Global Education Energy Environment (Global EEE) is a US-based 501(c)(3) nonprofit organization
