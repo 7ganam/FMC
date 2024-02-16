@@ -10,26 +10,13 @@ import IconButton from "@material-ui/core/IconButton";
 import Container from "@material-ui/core/Container";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Scrollspy from "react-scrollspy";
-import { useTranslation } from "next-i18next";
 import Settings from "./Settings";
 import MobileMenu from "./MobileMenu";
 import logo from "~/public/images/medical-logo.svg";
 
-import brand from "~/public/text/brand";
 import routeLink from "~/public/text/link";
 import useStyles from "./header-style";
 import navMenu from "./menu";
-
-let counter = 0;
-function createData(name, url, offset) {
-  counter += 1;
-  return {
-    id: counter,
-    name,
-    url,
-    offset,
-  };
-}
 
 function Header(props) {
   // Theme breakpoints
@@ -53,15 +40,7 @@ function Header(props) {
   }, []);
   const classes = useStyles();
   const { onToggleDark, onToggleDir, invert } = props;
-  const { t } = useTranslation("common");
 
-  const [menuList] = useState([
-    createData("About", "#about", 200),
-    createData(navMenu[1], "#" + navMenu[1], 200),
-    createData(navMenu[2], "#" + navMenu[2], 200),
-    createData(navMenu[3], "#" + navMenu[3], 200),
-    createData(navMenu[4], "#" + navMenu[4], 200),
-  ]);
   const [openDrawer, setOpenDrawer] = useState(false);
   const handleOpenDrawer = () => {
     setOpenDrawer(!openDrawer);
@@ -91,7 +70,7 @@ function Header(props) {
               <div className={classes.logo}>
                 {invert ? (
                   <Link href={routeLink.medical.home}>
-                    <a className="text-[13px]">
+                    <a>
                       <img src={logo} alt="logo" />
                       UAE Electric Vehicle Grand Prix
                     </a>
@@ -135,7 +114,7 @@ function Header(props) {
                       <Button href={"/" + "#GEVC"}>About</Button>
                     ) : (
                       // eslint-disable-next-line
-                      <Button component={AnchorLink} offset={150} href="#GEVC">
+                      <Button component={AnchorLink} offset={100} href="#GEVC">
                         Teams
                       </Button>
                     )}
@@ -146,7 +125,7 @@ function Header(props) {
                       <Button href={"/" + "#officials"}>About</Button>
                     ) : (
                       // eslint-disable-next-line
-                      <Button component={AnchorLink} offset={150} href="#officials">
+                      <Button component={AnchorLink} offset={100} href="#officials">
                         Officials
                       </Button>
                     )}
@@ -157,7 +136,7 @@ function Header(props) {
                       <Button href={"/" + "#partners"}>About</Button>
                     ) : (
                       // eslint-disable-next-line
-                      <Button component={AnchorLink} offset={150} href="#partners">
+                      <Button component={AnchorLink} offset={100} href="#partners">
                         Partners
                       </Button>
                     )}
