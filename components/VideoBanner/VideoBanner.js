@@ -118,33 +118,35 @@ function VideoBanner() {
                 <div className={classes.menuBg} />
                 <div className={classes.videoBg} />
               </div>
-              <div className={classes.videoWrap}>
-                <div className={classes.videoFigure}>
-                  <div className={classes.innerFigure}>
-                    <Hidden mdDown>
-                      {play && (
-                        <IconButton className={classes.btnPlay} onClick={_onTogglePause}>
-                          {playCtrl ? <PauseIcon /> : <PlayIcon />}
-                        </IconButton>
+              <Hidden mdDown>
+                <div className={classes.videoWrap}>
+                  <div className={classes.videoFigure}>
+                    <div className={classes.innerFigure}>
+                      <Hidden mdDown>
+                        {play && (
+                          <IconButton className={classes.btnPlay} onClick={_onTogglePause}>
+                            {playCtrl ? <PauseIcon /> : <PlayIcon />}
+                          </IconButton>
+                        )}
+                      </Hidden>
+                      {/* {!play || isMobile ? <img src={imgApi.medical[0]} alt="cover" /> : null} */}
+                      {yt.use && (
+                        <div className={classes.video}>
+                          <Hidden mdDown>
+                            <YouTube
+                              videoId="7AKcCCSRJ5s"
+                              opts={opts}
+                              onReady={_onReady}
+                              onEnd={_onEnd}
+                              onPlay={_onPlay}
+                            />
+                          </Hidden>
+                        </div>
                       )}
-                    </Hidden>
-                    {/* {!play || isMobile ? <img src={imgApi.medical[0]} alt="cover" /> : null} */}
-                    {yt.use && (
-                      <div className={classes.video}>
-                        <Hidden mdDown>
-                          <YouTube
-                            videoId="7AKcCCSRJ5s"
-                            opts={opts}
-                            onReady={_onReady}
-                            onEnd={_onEnd}
-                            onPlay={_onPlay}
-                          />
-                        </Hidden>
-                      </div>
-                    )}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Hidden>
               <div className={classes.parallaxBanner}>
                 <DotsParallax />
               </div>
