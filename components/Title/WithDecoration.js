@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Typography from '@material-ui/core/Typography';
-import useStyles from './title-style';
+import React from "react";
+import PropTypes from "prop-types";
+import Typography from "@material-ui/core/Typography";
+import useStyles from "./title-style";
 
 function WithDecoration(props) {
   const classes = useStyles();
@@ -9,10 +9,8 @@ function WithDecoration(props) {
   return (
     <div>
       <div className={classes.deco}>
-        <Typography className={bg ? classes.bgImg : ''} variant="h3" style={{ backgroundImage: `url(${bg})` }}>
-          <span>
-            {text}
-          </span>
+        <Typography className={bg ? classes.bgImg : ""} variant="h3" style={{ backgroundImage: `url(${bg})` }}>
+          <span>{text}</span>
         </Typography>
       </div>
     </div>
@@ -20,12 +18,12 @@ function WithDecoration(props) {
 }
 
 WithDecoration.propTypes = {
-  text: PropTypes.string.isRequired,
-  bg: PropTypes.string
+  text: PropTypes.string,
+  bg: PropTypes.string,
 };
 
 WithDecoration.defaultProps = {
-  bg: ''
+  bg: "",
 };
 
 export default WithDecoration;

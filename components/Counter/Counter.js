@@ -16,9 +16,11 @@ function Counter() {
           <Grid sm={4} item>
             <div className={clsx(classes.counterItem, classes.deco)}>
               <div className={classes.text}>
-                <Typography variant="h3">2</Typography>
-                <Typography component="p" style={{ fontSize: "18px" }}>
-                  Competitions
+                <Typography variant="h3">
+                  2<sup>nd</sup>
+                </Typography>
+                <Typography component="p" style={{ fontSize: "18px", textAlign: "center" }}>
+                  Event
                 </Typography>
               </div>
             </div>
@@ -26,8 +28,8 @@ function Counter() {
           <Grid sm={4} item>
             <div className={clsx(classes.counterItem, classes.deco)}>
               <div className={classes.text}>
-                <Typography variant="h3">5</Typography>
-                <Typography component="p" style={{ fontSize: "18px" }}>
+                <Typography variant="h3">4</Typography>
+                <Typography component="p" style={{ fontSize: "18px", textAlign: "center" }}>
                   Countries
                 </Typography>
               </div>
@@ -36,8 +38,8 @@ function Counter() {
           <Grid sm={4} item>
             <div className={clsx(classes.counterItem, classes.deco)}>
               <div className={classes.text}>
-                <Typography variant="h3">21</Typography>
-                <Typography component="p" style={{ fontSize: "18px" }}>
+                <Typography variant="h3">28</Typography>
+                <Typography component="p" style={{ fontSize: "18px", textAlign: "center" }}>
                   Teams
                 </Typography>
               </div>

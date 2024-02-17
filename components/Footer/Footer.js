@@ -67,13 +67,13 @@ function Footer(props) {
           <Box mr={-2} mt={-2}>
             <div className={classes.logo}>
               <img src={logo} alt="logo" />
-              <Typography variant="h6" color="textPrimary">
-                {brand.medical.projectName}
+              <Typography variant="subtitle1" color="textPrimary">
+                UAE Electric Vehicle Grand Prix
               </Typography>
             </div>
-            <div color="textPrimary" className={classes.footerDesc} gutterBottom>
-              Held for the first time in UAE
-              <div>Saturday 18 March, 2023</div>
+            <div color="textPrimary" className={classes.footerDesc} gutterbottom="true">
+              Held for the second time in UAE
+              <div>Saturday 2 March, 2024</div>
             </div>
             {isDesktop && <Copyright />}
           </Box>
@@ -134,17 +134,25 @@ function Footer(props) {
         </Grid>
         <Grid item xs={12} md={3}>
           <div className={classes.socmed}>
-            <IconButton aria-label="FB" className={classes.margin} size="small">
-              <i className="ion-logo-twitter" />
+            <IconButton aria-label="IG" className={classes.margin} size="small">
+              <a href="https://www.instagram.com/evgpglobal/" target="_blank">
+                <i className="ion-logo-instagram" />
+              </a>
             </IconButton>
             <IconButton aria-label="TW" className={classes.margin} size="small">
-              <i className="ion-logo-facebook" />
+              <a href="https://twitter.com/EVGPGlobal" target="_blank">
+                <i className="ion-logo-twitter" />
+              </a>
             </IconButton>
-            <IconButton aria-label="IG" className={classes.margin} size="small">
-              <i className="ion-logo-instagram" />
+            <IconButton aria-label="YT" className={classes.margin} size="small">
+              <a href="https://www.youtube.com/@EVGPGlobal" target="_blank">
+                <i className="ion-logo-youtube" />
+              </a>
             </IconButton>
             <IconButton aria-label="LI" className={classes.margin} size="small">
-              <i className="ion-logo-linkedin" />
+              <a href="https://www.tiktok.com/@globalevgp?_t=8jsiHnPW6Lt&_r=1" target="_blank">
+                <img src="/logo-tiktok.svg" height={24} width={24} />
+              </a>
             </IconButton>
           </div>
           {/* <SelectLang toggleDir={toggleDir} /> */}
