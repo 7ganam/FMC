@@ -39,11 +39,11 @@ function About() {
               scientific concepts and renewable energy technologies, and encourage them to consider technical careers at
               an early age. It also emphasizes critical thinking, leadership, team work, and project management, while
               educating a new generation of drivers about electric vehicles, hence promoting clean transportation
-              options. This competition are gaining popularity among high schools in the US and other parts of the world
+              options. This competition is gaining popularity among high schools in the US and other parts of the world
               as an exciting new environmentally progressive sport. The electric vehicles are single person,
               lightweight, aerodynamic, high efficiency, electric-motor-driven vehicles with three wheels. They must
               meet specific design and safety rules. They are powered by deep cycle sealed lead acid battery packs not
-              exceeding 33 kg (73 pounds). The race is held on a purposebuilt closed track with a minimum length of 0.5
+              exceeding 33 kg (73 pounds). The race is held on a purpose-built closed track with a minimum length of 0.5
               km. Speeds are software limited through the controller to ensure utmost safety. Teams drive their
               electrically powered vehicles as far as possible for one hour on the closed loop course using only energy
               stored in their batteries. The winner of the EVGP is the team that covers the longest distance in the
@@ -52,7 +52,7 @@ function About() {
             <div className="flex flex-row justify-center my-8">
               <a
                 target="_blank"
-                href="/files/awards.pdf"
+                href="/files/2024 UAE EVGP Awards and Evaluation.pdf"
                 className="text-2xl font-extrabold hover:underline hover:text-[#357A38]"
               >
                 <Button size="large" variant="contained" color="primary" className="mt-2 ml-auto">

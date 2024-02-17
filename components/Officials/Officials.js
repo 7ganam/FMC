@@ -45,7 +45,7 @@ function Officials(props) {
 
       <Container style={{ zIndex: "1" }}>
         <Grid container spacing={isDesktop ? 3 : 0} justifyContent="center">
-          <Grid item lg={8} md={10} xs={12} className={classes2.item1}>
+          <Grid item lg={8} md={8} xs={12} className={classes2.item1}>
             <Paper
               style={{ boxShadow: "-6px 5px 12px 13px rgb(0 0 0 / 6%)" }}
               className="w-full min-h-[300px] text-xl md:text-2xl p-6 z-50"
@@ -67,7 +67,7 @@ function Officials(props) {
               </a>
             </Paper>
           </Grid>
-          <Grid item lg={4} md={2} xs={12} className={classes2.item2}>
+          <Grid item lg={4} md={4} xs={12} className={classes2.item2}>
             <div className="my-4 mx-4">
               {" "}
               <Typography variant="h4">

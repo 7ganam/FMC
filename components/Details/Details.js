@@ -34,8 +34,8 @@ function Details() {
               conduct their qualifying laps on the track. Teams will line up for the group photo at 12:30 PM followed by
               the official race consisting of four 30-minute heats.
             </div>
-            <div className="w-[100%] h-[1px] bg-slate-300 my-4 m-auto" />
-            <div className="p-2">
+            <div className="w-[100%] h-[1px] bg-slate-300  m-auto" />
+            <div className="p-2 ">
               <a href="/files/event-schedule-2024.pdf" target="_blank" className="mx-2 mb-2">
                 <Button size="large" variant="contained" color="primary">
                   More info

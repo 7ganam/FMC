@@ -63,10 +63,11 @@ const useStyles = makeStyles((theme) => ({
   },
   containerWrap: {
     [theme.breakpoints.up("md")]: {
-      marginTop: theme.spacing(10),
+      marginTop: theme.spacing(0),
     },
     "& > section": {
       position: "relative",
+      backgroundColor: "green",
     },
   },
 }));
@@ -84,9 +85,9 @@ function Landing(props) {
         <title>Home Page</title>
       </Head>
       <CssBaseline />
-      <div className={classes.mainWrap}>
+      <div className={classes.mainWrap} style={{ marginTop: "0px" }}>
         <Header onToggleDark={onToggleDark} onToggleDir={onToggleDir} />
-        <main className={classes.containerWrap}>
+        <dev className={classes.containerWrap}>
           <section id="home">
             <VideoBanner />
           </section>
@@ -124,7 +125,7 @@ function Landing(props) {
           <section className={classes.spaceTopShort} id="clinics">
             <Clinics />
           </section>
-        </main>
+        </dev>
         <Hidden mdDown>
           <PageNav />
         </Hidden>

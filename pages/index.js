@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
   },
   containerWrap: {
     [theme.breakpoints.up("md")]: {
-      marginTop: theme.spacing(10),
+      marginTop: theme.spacing(0),
     },
     "& > section": {
       position: "relative",
