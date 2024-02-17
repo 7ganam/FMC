@@ -192,7 +192,7 @@ function GEVC() {
 
       <Container style={{ zIndex: "1" }}>
         <Grid container spacing={isDesktop ? 3 : 0} justifyContent="center">
-          <Grid item lg={4} xs={12}>
+          <Grid item md={4} xs={12}>
             <div
               style={{ boxShadow: "-6px 5px 12px 13px rgb(0 0 0 / 6%)" }}
               className="sticky w-full h-[250px]  bg-slate-600 top-[-150px] left-[50px] z-50 rounded-l-full rounded-b-full overflow-hidden"
@@ -200,7 +200,7 @@ function GEVC() {
               <img src="/Photo1.jpg" alt="cover" className="object-cover w-full h-full" />
             </div>
           </Grid>
-          <Grid item lg={8} xs={12}>
+          <Grid item md={8} xs={12}>
             <Paper
               style={{ boxShadow: "-6px 5px 12px 13px rgb(0 0 0 / 6%)" }}
               className="w-full min-h-[300px] text-xl md:text-2xl p-6 z-50 overflow-x-auto"

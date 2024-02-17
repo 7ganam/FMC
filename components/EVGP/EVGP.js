@@ -40,7 +40,7 @@ function EVGP(props) {
 
       <Container style={{ zIndex: "1" }}>
         <Grid container spacing={isDesktop ? 3 : 0} justifyContent="center">
-          <Grid item lg={8} md={10} xs={12} className={classes2.item1}>
+          <Grid item md={8} xs={12} className={classes2.item1}>
             <Paper
               style={{ boxShadow: "-6px 5px 12px 13px rgb(0 0 0 / 6%)" }}
               className="w-full min-h-[300px] text-xl md:text-2xl p-6 z-50 flex flex-col gap-4 text-justify"
@@ -71,7 +71,7 @@ function EVGP(props) {
               {/* <div className="w-[100%] h-[1px] bg-slate-300 my-4 m-auto" /> */}
             </Paper>
           </Grid>
-          <Grid item lg={4} md={2} xs={12} className={classes2.item2}>
+          <Grid item md={4} xs={12} className={classes2.item2}>
             <div
               style={{ boxShadow: "-6px 5px 12px 13px rgb(0 0 0 / 6%)" }}
               className="w-full h-[250px]  bg-slate-600 top-[-150px] left-[50px] z-50 md:rounded-r-full md:rounded-b-full overflow-hidden"
