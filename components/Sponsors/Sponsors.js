@@ -60,7 +60,7 @@ function Sponsors() {
           </Grid>
           <Grid item md={10} sm={3} xs={12}></Grid>
           <Grid item lg={12} md={12} xs={12}>
-            <div className="container grid grid-cols-1 gap-5 mx-auto md:grid-cols-4 p-4">
+            <div className="container grid grid-cols-1 gap-5 mx-auto md:grid-cols-5 p-4">
               {partnersData.map((item, index) => (
                 <ScrollAnimation
                   key={item.title}
@@ -70,7 +70,7 @@ function Sponsors() {
                   delay={index * 200}
                   duration={0.4}
                 >
-                  <div>{renderCard(item, index)}</div>
+                  <div className="h-[100%]">{renderCard(item, index)}</div>
                 </ScrollAnimation>
               ))}
             </div>
@@ -88,7 +88,7 @@ function Sponsors() {
           </Grid>
           <Grid item md={10} sm={3} xs={12}></Grid>
           <Grid item lg={12} md={12} xs={12}>
-            <div className="container grid grid-cols-1 gap-5 mx-auto md:grid-cols-4  p-4">
+            <div className="container grid grid-cols-1 gap-5 mx-auto md:grid-cols-5  p-4">
               {sponsorsData.map((item, index) => (
                 <ScrollAnimation
                   key={`item-${index}`}

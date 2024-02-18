@@ -213,11 +213,11 @@ function GEVC() {
                   {schools.map(({ id, team, location, teamNumber }) => (
                     <tr
                       key={id}
-                      className="flex md-flex-row items-center justify-start mt-1 bg-[#F0FAFE] p-2 md-p-[3px] rounded-md gap-2 hover:bg-[#D4E9F2] transition-all duration-300 ease-in-out overflow-x-auto"
+                      className="flex md-flex-row items-center justify-start mt-1 bg-[#F0FAFE] p-1 md-p-[3px] rounded-md gap-2 hover:bg-[#D4E9F2] transition-all duration-300 ease-in-out overflow-x-auto"
                     >
-                      <td className="text-xl bg-slate-200 px-[10px] rounded-md">{teamNumber}</td>
-                      <td className="text-xl ml-4 flex-1 text-center md-text-left whitespace-nowrap">{team}</td>
-                      <td className="text-xl bg-slate-200 px-[10px] rounded-md whitespace-nowrap">{location}</td>
+                      <td className="text-sm bg-slate-200 px-[10px] rounded-md">{teamNumber}</td>
+                      <td className="text-sm ml-4 flex-1 text-left md-text-left whitespace-nowrap">{team}</td>
+                      <td className="text-sm bg-slate-200 px-[10px] rounded-md whitespace-nowrap">{location}</td>
                     </tr>
                   ))}
                 </tbody>

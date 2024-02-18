@@ -40,7 +40,7 @@ function About() {
               an early age. It also emphasizes critical thinking, leadership, team work, and project management, while
               educating a new generation of drivers about electric vehicles, hence promoting clean transportation
               options. This competition is gaining popularity among high schools in the US and other parts of the world
-              as an exciting new environmentally progressive sport. The electric vehicles are single person,
+              as an exciting new environmentally progressive brain sport. The electric vehicles are single person,
               lightweight, aerodynamic, high efficiency, electric-motor-driven vehicles with three wheels. They must
               meet specific design and safety rules. They are powered by deep cycle sealed lead acid battery packs not
               exceeding 33 kg (73 pounds). The race is held on a purpose-built closed track with a minimum length of 0.5
