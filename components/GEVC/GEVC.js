@@ -47,12 +47,6 @@ const schools = [
     location: "Ras Al Khaimah, UAE",
   },
   {
-    id: 7,
-    teamNumber: "037",
-    team: "Al Najah Private School & Basmat Amal",
-    location: "Abu Dhabi, UAE",
-  },
-  {
     id: 8,
     teamNumber: "052",
     team: "Khalifa Bin Zayed Al Awal School",
@@ -62,6 +56,12 @@ const schools = [
     id: 9,
     teamNumber: "058",
     team: "Al Basma British School",
+    location: "Abu Dhabi, UAE",
+  },
+  {
+    id: 7,
+    teamNumber: "087",
+    team: "Al Najah Private School & Basmat Amal",
     location: "Abu Dhabi, UAE",
   },
   {
